@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "91504254988",
+    "firebase_url": "https://las-buenas-nueva-1601087605584.firebaseio.com",
+    "project_id": "las-buenas-nueva-1601087605584",
+    "storage_bucket": "las-buenas-nueva-1601087605584.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91504254988:android:6c1873121e89b707fa8e29",
+        "android_client_info": {
+          "package_name": "com.escm.lbn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91504254988-dneribbp5o0u7b1n75fvhlmftpljfph0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.escm.lbn",
+            "certificate_hash": "836287a236047855371ba2f096105625067d6dbb"
+          }
+        },
+        {
+          "client_id": "91504254988-0cb7n3fsf9ucolhu83v4s5o7k56avpc6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrVm9hN_HvvWpMUTLW1XNEdXUfTPEMW_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91504254988-0cb7n3fsf9ucolhu83v4s5o7k56avpc6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

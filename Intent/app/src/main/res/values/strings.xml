@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Intent</string>
+    <string name="btn_siguiente">Siguiente</string>
+    <string name="tv1">Primer Activity</string>
+    <string name="btn_anterior">Anterior</string>
+    <string name="tv2">Segundo Activity</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Concatenar Palabras</string>
+    <string name="txtResultado">Resultado</string>
+    <string name="edPrimerPalabra">Ingrese primer palabra</string>
+    <string name="edSegundaPalabra">Ingrese segunda palabra</string>
+    <string name="textoBoton">Concatenar Palabras</string>
+</resources>

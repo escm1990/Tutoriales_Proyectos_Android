@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Practica Radio Button</string>
+    <string name="ed1">Ingrese primer valor</string>
+    <string name="ed2">Ingrese segundo valor</string>
+    <string name="rb1">Sumar</string>
+    <string name="rb2">Restar</string>
+    <string name="rb3">Multiplicar</string>
+    <string name="rb4">Dividir</string>
+    <string name="btn">Calcular</string>
+    <string name="tv1">Resultado</string>
+</resources>
