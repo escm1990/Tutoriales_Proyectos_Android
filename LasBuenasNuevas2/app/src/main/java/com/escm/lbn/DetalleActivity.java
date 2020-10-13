@@ -61,8 +61,7 @@ public class DetalleActivity extends AppCompatActivity {
                 return false;
             }
         });
-
-
+        
         webView.setVisibility(View.INVISIBLE);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebChromeClient(new WebChromeClient());

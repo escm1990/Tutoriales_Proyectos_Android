@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.facebook.login.LoginManager
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.crashlytics.FirebaseCrashlytics
 import kotlinx.android.synthetic.main.activity_home.*
 
 enum class ProviderType{
@@ -53,6 +54,19 @@ class HomeActivity : AppCompatActivity() {
             //desloguearse
             FirebaseAuth.getInstance().signOut()
             onBackPressed()
+        }
+
+        forzarError.setOnClickListener {
+
+            //Enviar información adicional
+            FirebaseCrashlytics.getInstance().setUserId(email) //enviando usuario de la app
+            FirebaseCrashlytics.getInstance().setCustomKey("provider",provider) //enviando informacion personalizada
+
+            //usando crahslytics como log
+            FirebaseCrashlytics.getInstance().log("Se ha pulsado el boton PULSAR ERROR")
+
+            //Forzando un error
+            //throw RuntimeException("Test Crash") // Force a crash
         }
     }
 }
