@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Buenas Nuevas</string>
     <string name="navbarH">Hola</string>
+    <string name="name_developer">Hecho por: Erick Cruz</string>
+    <string name="name_position">Ingeniero de Sistemas Informáticos</string>
+    <string name="contacto">Contacto: </string>
+    <string name="facebook">Facebook</string>
+    <string name="derechosReservados">Buenas Nuevas - 2020</string>
 </resources>

@@ -12,13 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".PostDetailActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity android:name=".DetalleActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".PrincipalActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".MainActivity"
+        <activity android:name=".AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PostDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DetalleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrincipalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

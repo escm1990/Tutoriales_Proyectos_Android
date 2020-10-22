@@ -24,7 +24,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
 
     private Context context;
     private List<Item> items;
-    public static final String imgDefault = "https://image.freepik.com/vector-gratis/coleccion-biblia-abierta_23-2147692457.jpg";
+
 
     public PostAdapter(Context context, List<Item> items) {
         this.context = context;
@@ -65,7 +65,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
             Log.d("CODE","Image - "+elements.get(0).attr("src")); //esto obtendrá la PRIMERA IMAGEN que encuentre en el contenido
         }catch (Exception ex){
             Log.d("CODE","Error al buscar imagen: "+ex.getMessage());
-            Glide.with(context).load(imgDefault).into(holder.postImage);
+            Glide.with(context).load(Constants.imgDefault).into(holder.postImage);
             ex.printStackTrace(System.err);
         }
 

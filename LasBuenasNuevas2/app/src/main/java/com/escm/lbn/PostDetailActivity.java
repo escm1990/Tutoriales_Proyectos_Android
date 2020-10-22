@@ -7,6 +7,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -57,8 +58,16 @@ public class PostDetailActivity extends AppCompatActivity {
                         startActivity(intent);
                         finish();
                         break;
+                    case R.id.nav_facebook:
+                        Uri uri = Uri.parse(Constants.url_facebook);
+                        Intent intent3 = new Intent(Intent.ACTION_VIEW,uri);
+                        startActivity(intent3);
+                        finish();
+                        break;
                     case R.id.nav_about:
-                        Toast.makeText(PostDetailActivity.this, "Acerca de", Toast.LENGTH_SHORT).show();
+                        Intent intent2 = new Intent(PostDetailActivity.this,AboutActivity.class);
+                        startActivity(intent2);
+                        finish();
                         break;
                 }
                 return false;
