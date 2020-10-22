@@ -77,4 +77,7 @@ dependencies {
 
     //spinkit
     implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+    //html text view
+    implementation 'org.sufficientlysecure:html-textview:3.2'
 }

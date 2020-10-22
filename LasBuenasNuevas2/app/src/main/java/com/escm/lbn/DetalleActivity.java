@@ -14,6 +14,7 @@ import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -28,6 +29,7 @@ public class DetalleActivity extends AppCompatActivity {
     ActionBarDrawerToggle actionBarDrawerToggle;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
+    Button botonCompartir;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,7 @@ public class DetalleActivity extends AppCompatActivity {
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         toolbar = (Toolbar) findViewById(R.id.toolbar2);
         webView = (WebView) findViewById(R.id.detailView);
+        botonCompartir = (Button) findViewById(R.id.btn_share);
 
         setUpToolbar();
         navigationView = findViewById(R.id.idNavigationView); //menu
@@ -51,11 +54,8 @@ public class DetalleActivity extends AppCompatActivity {
                         startActivity(intent);
                         finish();
                         break;
-                    case R.id.nav_favoritos:
-                        Toast.makeText(DetalleActivity.this, "Android", Toast.LENGTH_SHORT).show();
-                        break;
                     case R.id.nav_about:
-                        Toast.makeText(DetalleActivity.this, "Android", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(DetalleActivity.this, "Acerca de", Toast.LENGTH_SHORT).show();
                         break;
                 }
                 return false;
@@ -97,7 +97,7 @@ public class DetalleActivity extends AppCompatActivity {
                         "    y[0].hidden = 'true';\n" +
                         "    var w = document.getElementsByClassName('sidebar-container container');\n" +
                         "    w[0].hidden = 'true';\n" +
-                        "    var i = document.getElementsByClassName('blogger');\n" +
+                        "    var i = document.getElementsByClassName('widget-content');\n" +
                         "    i[0].hidden = 'true';\n" +
                         "})()";
 
@@ -105,6 +105,18 @@ public class DetalleActivity extends AppCompatActivity {
             }
         });
         webView.loadUrl(urlPost);
+
+        //boton compartir
+        botonCompartir.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                Intent compartir = new Intent(android.content.Intent.ACTION_SEND);
+                compartir.setType("text/plain");
+                String mensaje = "Quiero compartir contigo las buenas nuevas: "+urlPost;
+                compartir.putExtra(android.content.Intent.EXTRA_SUBJECT, "Buenas Nuevas");
+                compartir.putExtra(android.content.Intent.EXTRA_TEXT, mensaje);
+                startActivity(Intent.createChooser(compartir, "Compartir vía"));
+            }
+        });
     }
 
     private void setUpToolbar() {

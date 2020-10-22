@@ -27,9 +27,9 @@ public class BloggerAPI {
         //@GET("?key="+key)
         @GET
         Call<PostList> getPostLIst(@Url String url);
-/*
+
         @GET("{postId}/?key="+key)
         Call<Item> getPostById(@Path("postId") String id);
-*/
+
     }
 }

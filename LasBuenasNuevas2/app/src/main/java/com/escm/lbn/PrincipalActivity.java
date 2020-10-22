@@ -62,11 +62,8 @@ public class PrincipalActivity extends AppCompatActivity {
                         startActivity(intent);
                         finish();
                         break;
-                    case R.id.nav_favoritos:
-                        Toast.makeText(PrincipalActivity.this, "Android", Toast.LENGTH_SHORT).show();
-                        break;
                     case R.id.nav_about:
-                        Toast.makeText(PrincipalActivity.this, "Android", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(PrincipalActivity.this, "Acerca de", Toast.LENGTH_SHORT).show();
                         break;
                 }
                 return false;

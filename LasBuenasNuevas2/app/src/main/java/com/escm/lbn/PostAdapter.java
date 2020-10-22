@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -19,15 +18,13 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder> {
 
     private Context context;
     private List<Item> items;
+    public static final String imgDefault = "https://image.freepik.com/vector-gratis/coleccion-biblia-abierta_23-2147692457.jpg";
 
     public PostAdapter(Context context, List<Item> items) {
         this.context = context;
@@ -62,17 +59,26 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
         holder.postDescription.setText(document.text());
 
         //obteniendo la imagen del contenido del item (post) recuperado
-        Elements elements = document.select("img");
-        Log.d("CODE","Image - "+elements.get(0).attr("src")); //esto obtendrá la PRIMERA IMAGEN que encuentre en el contenido
-        Log.d("TEXT",document.text());
-        Glide.with(context).load(elements.get(0).attr("src")).into(holder.postImage);
+        try {
+            Elements elements = document.select("img");
+            Glide.with(context).load(elements.get(0).attr("src")).into(holder.postImage);
+            Log.d("CODE","Image - "+elements.get(0).attr("src")); //esto obtendrá la PRIMERA IMAGEN que encuentre en el contenido
+        }catch (Exception ex){
+            Log.d("CODE","Error al buscar imagen: "+ex.getMessage());
+            Glide.with(context).load(imgDefault).into(holder.postImage);
+            ex.printStackTrace(System.err);
+        }
 
         //Mostrando el detalle del post al dar clic sobre el
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context,DetalleActivity.class);
+                //Intent intent = new Intent(context,DetalleActivity.class);
+                Intent intent = new Intent(context,PostDetailActivity.class);
                 intent.putExtra("url",item.getUrl());
+                intent.putExtra("title",item.getTitle());
+                //intent.putExtra("content",document.text()); //investigar como parsear el HTML, con wl WhiteList sale, pero es mero complicado
+                intent.putExtra("content",item.getContent());
                 context.startActivity(intent);
             }
         });
