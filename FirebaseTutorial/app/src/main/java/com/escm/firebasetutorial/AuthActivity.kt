@@ -20,6 +20,9 @@ import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FacebookAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.ktx.Firebase
+import com.google.firebase.remoteconfig.ktx.remoteConfig
+import com.google.firebase.remoteconfig.ktx.remoteConfigSettings
 import kotlinx.android.synthetic.main.activity_auth.*
 
 class AuthActivity : AppCompatActivity() {
@@ -40,6 +43,14 @@ class AuthActivity : AppCompatActivity() {
         val bundle = Bundle()
         bundle.putString("message","Integracion de Firebase completa")
         analytics.logEvent("InitScreen",bundle)
+
+        //Remote config
+        val configSettings = remoteConfigSettings{
+            minimumFetchIntervalInSeconds = 60
+        }
+        val firebaseConfig = Firebase.remoteConfig
+        firebaseConfig.setConfigSettingsAsync(configSettings)
+        firebaseConfig.setDefaultsAsync(mapOf("show_error_button" to false,"error_button_text" to "Forzar Error"))
 
         //notificacion push
         notification()
