@@ -61,10 +61,8 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
         //obteniendo la imagen del contenido del item (post) recuperado
         try {
             Elements elements = document.select("img");
-            Glide.with(context).load(elements.get(0).attr("src")).into(holder.postImage);
-            Log.d("CODE","Image - "+elements.get(0).attr("src")); //esto obtendrá la PRIMERA IMAGEN que encuentre en el contenido
+            Glide.with(context).load(elements.get(0).attr("src")).into(holder.postImage);//esto obtendrá la PRIMERA IMAGEN que encuentre en el contenido
         }catch (Exception ex){
-            Log.d("CODE","Error al buscar imagen: "+ex.getMessage());
             Glide.with(context).load(Constants.imgDefault).into(holder.postImage);
             ex.printStackTrace(System.err);
         }
@@ -73,12 +71,11 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent intent = new Intent(context,DetalleActivity.class);
                 Intent intent = new Intent(context,PostDetailActivity.class);
                 intent.putExtra("url",item.getUrl());
                 intent.putExtra("title",item.getTitle());
-                //intent.putExtra("content",document.text()); //investigar como parsear el HTML, con wl WhiteList sale, pero es mero complicado
                 intent.putExtra("content",item.getContent());
+                intent.putExtra("idPost",item.getId());
                 context.startActivity(intent);
             }
         });

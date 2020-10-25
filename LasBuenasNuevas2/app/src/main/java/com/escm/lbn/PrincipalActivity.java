@@ -63,6 +63,11 @@ public class PrincipalActivity extends AppCompatActivity {
                         startActivity(intent);
                         finish();
                         break;
+                    case R.id.nav_favoritos:
+                        Intent intent4 = new Intent(PrincipalActivity.this,FavoritosActivity.class);
+                        startActivity(intent4);
+                        finish();
+                        break;
                     case R.id.nav_facebook:
                         Uri uri = Uri.parse(Constants.url_facebook);
                         Intent intent3 = new Intent(Intent.ACTION_VIEW,uri);

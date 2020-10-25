@@ -5,6 +5,10 @@
         android:id="@+id/group1">
         <item android:id="@+id/nav_home"
             android:title="Inicio"/>
+
+        <item android:id="@+id/nav_favoritos"
+            android:title="@string/favoritos"/>
+
         </group>
 
         <group android:checkableBehavior="single"

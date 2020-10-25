@@ -1,6 +1,9 @@
 apply plugin: 'com.android.application'
 //SERVICIOS DE GOOGLE
 apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-android'
+// Apply the Crashlytics Gradle plugin
+apply plugin: 'com.google.firebase.crashlytics'
 
 android {
     compileSdkVersion 30
@@ -38,6 +41,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
     implementation 'androidx.drawerlayout:drawerlayout:1.1.1'
     implementation 'com.google.firebase:firebase-inappmessaging-display:19.0.7'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
@@ -68,7 +72,7 @@ dependencies {
     //jsoup (para formatear texto)
     implementation 'org.jsoup:jsoup:1.13.1'
 
-    // add the Firebase SDK for Google Analytics
+    // airebadd the Fse SDK for Google Analytics
     implementation 'com.google.firebase:firebase-core:17.5.0'
     // add SDKs for any other desired Firebase products
     // https://firebase.google.com/docs/android/setup#available-libraries
@@ -80,4 +84,13 @@ dependencies {
 
     //html text view
     implementation 'org.sufficientlysecure:html-textview:3.2'
+
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:25.12.0')
+
+    // Declare the dependencies for the Crashlytics and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-analytics'
+
 }
