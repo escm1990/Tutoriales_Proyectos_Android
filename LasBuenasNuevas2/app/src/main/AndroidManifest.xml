@@ -12,8 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".FavoritosActivity"
+        <activity android:name=".ConviccionesActivity"
             android:screenOrientation="portrait"/>
+        <activity android:name=".DoctrinaActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".FavoritosActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".AboutActivity"
             android:screenOrientation="portrait" />
@@ -35,6 +40,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/caAdmobID"/>
+
     </application>
 
 </manifest>

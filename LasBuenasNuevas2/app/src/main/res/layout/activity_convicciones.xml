@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/drawerLayoutConvicciones">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ConviccionesActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarConvicciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="567dp"
+            android:layout_below="@id/toolbarConvicciones"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/toolbarConvicciones">
+
+            <ScrollView
+                android:layout_width="326dp"
+                android:layout_height="500dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/editTextTextMultiLine2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:inputType="textMultiLine"
+                        android:text="Nuestra visión: El mundo para Cristo;
+                                    \n\nNuestra pasión: La Salvación de las almas;
+                                    \n\nNuestra preocupación: La bendición de Dios;
+                                    \n\nNuestra fuerza: La Unción del Espíritu Santo;
+                                    \n\nNuestros intereses: Los del Reino de los Cielos;
+                                    \n\nNuestra arma: La Palabra de Dios;
+                                    \n\nNuestra doctrina: Fundamentalmente Bíblicas;
+                                    \n\nNuestras normas: Las más altas;
+                                    \n\nNuestras fronteras: El mundo;
+                                    \n\nNuestra decisión: Hasta la muerte;
+                                    \n\nNuestro anhelo: El Rapto de la Iglesia;
+                                    \n\nNuestra recompensa: En el Cielo; a unos corona de Plata, a otros corona de Oro, a otros coronas de Piedras Preciosas;
+                                    \n\nNuestra gran fiesta: Las Bodas del Cordero y la Iglesia;
+                                    \n\nNuestro hogar: La Nueva Jerusalén, en el Cielo" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adViewBannerConvicciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/caBannerPruebasDesa">
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/idNavigationViewConvicciones"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/drawer_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

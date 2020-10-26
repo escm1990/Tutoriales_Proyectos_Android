@@ -12,7 +12,6 @@
         android:layout_height="match_parent"
         tools:context=".AboutActivity">
 
-
         <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
@@ -42,19 +41,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
+            <Button
+                android:id="@+id/buttonCrash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
             <TextView
                 android:id="@+id/developer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/name_developer"
-                android:textColor="#FFFFFF"
-                android:textSize="18dp" />
-
-            <TextView
-                android:id="@+id/position_dev"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/name_position"
                 android:textColor="#FFFFFF"
                 android:textSize="18dp" />
 
@@ -92,6 +89,17 @@
                 app:layout_constraintTop_toBottomOf="@+id/btn_linkedin" />
 
         </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adViewBannerAcercaDe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/caBannerPruebasDesa">
+        </com.google.android.gms.ads.AdView>
 
     </RelativeLayout>
 

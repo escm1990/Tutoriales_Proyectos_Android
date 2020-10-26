@@ -47,8 +47,9 @@
             android:background="@drawable/share3" />
 
         <LinearLayout
+            android:id="@+id/layoutDetalle"
             android:layout_width="match_parent"
-            android:layout_height="567dp"
+            android:layout_height="525dp"
             android:layout_below="@id/toolbar3"
             android:layout_marginTop="1dp"
             android:gravity="center"
@@ -94,6 +95,17 @@
             </ScrollView>
 
         </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adViewBannerDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/caBannerPruebasDesa">
+        </com.google.android.gms.ads.AdView>
 
     </RelativeLayout>
 

@@ -17,6 +17,11 @@ import android.widget.AbsListView;
 import android.widget.Toast;
 
 import com.github.ybq.android.spinkit.SpinKitView;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
@@ -40,11 +45,25 @@ public class PrincipalActivity extends AppCompatActivity {
     int currentItems, totalItems, scrollOutItems;
     String token = "";
     SpinKitView progress;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
+
+        //mostrar anuncios
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+
+        mAdView = findViewById(R.id.adViewBannerPrincipal);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+        //otras variables
         recyclerView = (RecyclerView) findViewById(R.id.postList);
         manager = new LinearLayoutManager(this);
         adapter = new PostAdapter(this, items);
@@ -61,6 +80,16 @@ public class PrincipalActivity extends AppCompatActivity {
                     case R.id.nav_home:
                         Intent intent = new Intent(PrincipalActivity.this,PrincipalActivity.class);
                         startActivity(intent);
+                        finish();
+                        break;
+                    case R.id.nav_doctrina:
+                        Intent intent5 = new Intent(PrincipalActivity.this,DoctrinaActivity.class);
+                        startActivity(intent5);
+                        finish();
+                        break;
+                    case R.id.nav_convicciones:
+                        Intent intent6 = new Intent(PrincipalActivity.this,ConviccionesActivity.class);
+                        startActivity(intent6);
                         finish();
                         break;
                     case R.id.nav_favoritos:

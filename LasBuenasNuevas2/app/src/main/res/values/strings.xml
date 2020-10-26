@@ -7,4 +7,14 @@
     <string name="facebook">Facebook</string>
     <string name="derechosReservados">Buenas Nuevas - 2020</string>
     <string name="favoritos">Favoritos</string>
+    <string name="doctrina">Doctrina</string>
+    <string name="convicciones">Convicciones</string>
+    <string name="caAdmobID">ca-app-pub-9964175276885038~4002207073</string>
+    <string name="caBannerPrincipal">ca-app-pub-9964175276885038/1375548895</string>
+    <string name="caBannerFavoritos">ca-app-pub-9964175276885038/2444571063</string>
+    <string name="caBannerAcercaDe">ca-app-pub-9964175276885038/6192244388</string>
+    <string name="caBannerDoctrina">ca-app-pub-9964175276885038/9031172477</string>
+    <string name="caBannerConvicciones">ca-app-pub-9964175276885038/1511280265</string>
+    <string name="caBannerDetalle">ca-app-pub-9964175276885038/2549029769</string>
+    <string name="caBannerPruebasDesa">ca-app-pub-3940256099942544/6300978111</string>
 </resources>

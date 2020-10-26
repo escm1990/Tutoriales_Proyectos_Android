@@ -93,4 +93,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-crashlytics'
     implementation 'com.google.firebase:firebase-analytics'
 
+    //SDK de Mobile Ads (anuncios con firebase)
+    implementation 'com.google.firebase:firebase-ads:18.0.0'
+
+
 }

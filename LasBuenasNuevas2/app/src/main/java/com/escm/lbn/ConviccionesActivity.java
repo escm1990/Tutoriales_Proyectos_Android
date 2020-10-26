@@ -10,8 +10,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -20,9 +18,7 @@ import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.navigation.NavigationView;
 
-public class AboutActivity extends AppCompatActivity {
-
-    Button botonLinkedin;
+public class ConviccionesActivity extends AppCompatActivity {
 
     ActionBarDrawerToggle actionBarDrawerToggle;
     DrawerLayout drawerLayout;
@@ -33,7 +29,7 @@ public class AboutActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about);
+        setContentView(R.layout.activity_convicciones);
 
         //mostrar anuncios
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
@@ -42,37 +38,37 @@ public class AboutActivity extends AppCompatActivity {
             }
         });
 
-        mAdView = findViewById(R.id.adViewBannerAcercaDe);
+        mAdView = findViewById(R.id.adViewBannerConvicciones);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
         //Barra de herramientas
-        toolbar = (Toolbar) findViewById(R.id.toolbarAbout);
+        toolbar = (Toolbar) findViewById(R.id.toolbarConvicciones);
         setUpToolbar();
 
         //Panel de navegacion lateral
-        navigationView = findViewById(R.id.idNavigationViewAbout); //menu
+        navigationView = findViewById(R.id.idNavigationViewConvicciones); //menu
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
                     case R.id.nav_home:
-                        Intent intent = new Intent(AboutActivity.this,PrincipalActivity.class);
+                        Intent intent = new Intent(ConviccionesActivity.this,PrincipalActivity.class);
                         startActivity(intent);
                         finish();
                         break;
                     case R.id.nav_doctrina:
-                        Intent intent5 = new Intent(AboutActivity.this,DoctrinaActivity.class);
+                        Intent intent5 = new Intent(ConviccionesActivity.this,DoctrinaActivity.class);
                         startActivity(intent5);
                         finish();
                         break;
                     case R.id.nav_convicciones:
-                        Intent intent6 = new Intent(AboutActivity.this,ConviccionesActivity.class);
+                        Intent intent6 = new Intent(ConviccionesActivity.this,ConviccionesActivity.class);
                         startActivity(intent6);
                         finish();
                         break;
                     case R.id.nav_favoritos:
-                        Intent intent4 = new Intent(AboutActivity.this,FavoritosActivity.class);
+                        Intent intent4 = new Intent(ConviccionesActivity.this,FavoritosActivity.class);
                         startActivity(intent4);
                         finish();
                         break;
@@ -83,7 +79,7 @@ public class AboutActivity extends AppCompatActivity {
                         finish();
                         break;
                     case R.id.nav_about:
-                        Intent intent2 = new Intent(AboutActivity.this,AboutActivity.class);
+                        Intent intent2 = new Intent(ConviccionesActivity.this,AboutActivity.class);
                         startActivity(intent2);
                         finish();
                         break;
@@ -91,32 +87,11 @@ public class AboutActivity extends AppCompatActivity {
                 return false;
             }
         });
-
-        botonLinkedin = (Button) findViewById(R.id.btn_linkedin);
-
-        botonLinkedin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Uri uri = Uri.parse(Constants.utl_linkedin);
-                Intent intent = new Intent(Intent.ACTION_VIEW,uri);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        //probar crashlitycs
-        Button crashButton = (Button) findViewById(R.id.buttonCrash);
-        crashButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                throw new RuntimeException("Test Crash"); // Force a crash
-            }
-        });
-
     }
 
     private void setUpToolbar() {
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayoutAbout);
-        toolbar = findViewById(R.id.toolbarAbout);
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayoutConvicciones);
+        toolbar = findViewById(R.id.toolbarConvicciones);
         setSupportActionBar(toolbar);
         actionBarDrawerToggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.app_name,R.string.app_name);
         drawerLayout.addDrawerListener(actionBarDrawerToggle);

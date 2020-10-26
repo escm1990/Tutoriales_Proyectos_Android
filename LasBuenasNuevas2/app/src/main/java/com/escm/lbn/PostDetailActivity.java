@@ -18,6 +18,11 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.navigation.NavigationView;
 
 import org.sufficientlysecure.htmltextview.HtmlHttpImageGetter;
@@ -38,11 +43,23 @@ public class PostDetailActivity extends AppCompatActivity {
     NavigationView navigationView;
     Button botonCompartir, botonFavoritos;
     Toolbar toolbar;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_detail);
+
+        //mostrar anuncios
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+
+        mAdView = findViewById(R.id.adViewBannerDetalle);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         //Barra de herramientas
         toolbar = (Toolbar) findViewById(R.id.toolbar3);
@@ -59,6 +76,16 @@ public class PostDetailActivity extends AppCompatActivity {
                     case R.id.nav_home:
                         Intent intent = new Intent(PostDetailActivity.this,PrincipalActivity.class);
                         startActivity(intent);
+                        finish();
+                        break;
+                    case R.id.nav_doctrina:
+                        Intent intent5 = new Intent(PostDetailActivity.this,DoctrinaActivity.class);
+                        startActivity(intent5);
+                        finish();
+                        break;
+                    case R.id.nav_convicciones:
+                        Intent intent6 = new Intent(PostDetailActivity.this,ConviccionesActivity.class);
+                        startActivity(intent6);
                         finish();
                         break;
                     case R.id.nav_favoritos:

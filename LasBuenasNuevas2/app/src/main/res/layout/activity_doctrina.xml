@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/drawerLayoutDoctrina">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DoctrinaActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarDoctrina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="567dp"
+            android:layout_below="@id/toolbarDoctrina"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/toolbarDoctrina">
+
+            <ScrollView
+                android:layout_width="326dp"
+                android:layout_height="500dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/editTextTextMultiLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:inputType="textMultiLine"
+                        android:text="> La Inspiración de las Sagradas Escrituras. 2 Timoteo 3: 15-17; 2 Pedro 1:19-21
+                        \n\n> La Adorable Deidad en Tres Personas: Padre, Hijo, Espíritu Santo. Mateo 3: 16, 17; 28:19; Génesis 1:26; 3:22; 11:7; Juan 17:5, 24, 26: 16; 32; 14:16, 23; 2Pedro 1:17, 18; Apocalipsis 5. Mateo 17:1-5; Juan 18:5,6.
+                        \n\n> La Salvación por la fe en Cristo. Romanos 10: 13; Tito 2:11; Lucas 24:47; Tito 3:5-7; Juan 3:16.
+                        \n\n> El Nuevo Nacimiento. Juan 3:36, 1 Pedro 1:23, 1 Juan 3:9.
+                        \n\n> La Justificación por la Fe. Romanos 5:1; Tito 3:7.
+                        \n\n> El Bautismo en Agua por Inmersión, según lo ordenado por Cristo. Mateo 28:19; Hechos 8:36-39.
+                        \n\n> El Bautismo en el Espíritu Santo, subsecuente a la salvación, hablando en otras lenguas. Hechos 2:4; Lucas 24:49, Hechos 1:4, 8; 2:4.
+                        \n\n> La Sanidad Divina. Isaías 53:4; Mateo 8:16,17; Marcos 16:18; Santiago 5:14,15.
+                        \n\n> Los Dones del Espíritu Santo. 1 Corintios 12:1-11.
+                        \n\n> Los Frutos del Espíritu Santo. Gálatas 5:22-26.
+                        \n\n> La Santificación. Hebreos 12: 14; 1 Pedro 1:15,16; 1Tesalonicenses 4:3; 5:23; 1 Juan 2:6.
+                        \n\n> El Ministerio y la Evangelización. Marcos 16:15-20; Romanos 10:15.
+                        \n\n> El Diezmo y el Sostenimiento de la Obra. Génesis 14:20; 28:22; Mateo 24:14.
+                        \n\n> El Levantamiento de la Iglesia. 1 Tesalonicenses 4:16,17; Romanos 8:23; 1 Corintios 15: 51-52.
+                        \n\n> La Segunda Venida de Cristo. 2 Tesalonicenses 1:7; Tito 2:13; Zacarías 14: 1-9; Judas 14,15; Mateo 24:30-31.
+                        \n\n> El Reino Milenial. Apocalipsis 19:20; 20:3-10; Isaías 2:1-4; 11:5-10; Zacarías 9:10.
+                        \n\n> Cielos Nuevos y Tierra Nueva. 2 Pedro 3:13; Apocalipsis 21:1; Isaías 65:17; 66:22.  " />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adViewBannerDoctrina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/caBannerPruebasDesa">
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/idNavigationViewDoctrina"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/drawer_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

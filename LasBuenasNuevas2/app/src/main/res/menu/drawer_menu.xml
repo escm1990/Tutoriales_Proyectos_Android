@@ -6,6 +6,12 @@
         <item android:id="@+id/nav_home"
             android:title="Inicio"/>
 
+        <item android:id="@+id/nav_doctrina"
+            android:title="@string/doctrina"/>
+
+        <item android:id="@+id/nav_convicciones"
+            android:title="@string/convicciones"/>
+
         <item android:id="@+id/nav_favoritos"
             android:title="@string/favoritos"/>
 

@@ -17,6 +17,11 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
@@ -30,11 +35,23 @@ public class FavoritosActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favoritos);
+
+        //mostrar anuncios
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+
+        mAdView = findViewById(R.id.adViewBannerFavoritos);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         //Barra de herramientas
         toolbar = (Toolbar) findViewById(R.id.toolbarFavorito);
@@ -49,6 +66,16 @@ public class FavoritosActivity extends AppCompatActivity {
                     case R.id.nav_home:
                         Intent intent = new Intent(FavoritosActivity.this,PrincipalActivity.class);
                         startActivity(intent);
+                        finish();
+                        break;
+                    case R.id.nav_doctrina:
+                        Intent intent5 = new Intent(FavoritosActivity.this,DoctrinaActivity.class);
+                        startActivity(intent5);
+                        finish();
+                        break;
+                    case R.id.nav_convicciones:
+                        Intent intent6 = new Intent(FavoritosActivity.this,ConviccionesActivity.class);
+                        startActivity(intent6);
                         finish();
                         break;
                     case R.id.nav_favoritos:
