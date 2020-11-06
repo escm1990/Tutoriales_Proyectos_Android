@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //CArgar fragment en el activity
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.container_fragment, detallePersonaFragment);
+        fragmentTransaction.replace(R.id.container, detallePersonaFragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
 

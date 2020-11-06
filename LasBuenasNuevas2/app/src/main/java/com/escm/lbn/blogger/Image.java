@@ -1,5 +1,5 @@
 
-package com.escm.lbn;
+package com.escm.lbn.blogger;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

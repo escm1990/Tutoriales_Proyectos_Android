@@ -11,7 +11,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.escm.lbn.Constants;
+import com.escm.lbn.helpers.Constants;
 import com.escm.lbn.R;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;

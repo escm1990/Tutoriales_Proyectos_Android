@@ -3,7 +3,7 @@
     <string name="navbarH">Hola</string>
     <string name="name_developer">Hecho por: Erick Cruz</string>
     <string name="name_position">Ingeniero de Sistemas Informáticos</string>
-    <string name="contacto">Contacto: </string>
+    <string name="contacto">Contacto Desarrollador: </string>
     <string name="facebook">Facebook</string>
     <string name="derechosReservados">Buenas Nuevas - 2020</string>
     <string name="favoritos">Favoritos</string>
@@ -17,4 +17,6 @@
     <string name="caBannerConvicciones">ca-app-pub-9964175276885038/1511280265</string>
     <string name="caBannerDetalle">ca-app-pub-9964175276885038/2549029769</string>
     <string name="caBannerPruebasDesa">ca-app-pub-3940256099942544/6300978111</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

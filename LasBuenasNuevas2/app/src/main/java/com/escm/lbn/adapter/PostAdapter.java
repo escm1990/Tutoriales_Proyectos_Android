@@ -1,8 +1,7 @@
-package com.escm.lbn;
+package com.escm.lbn.adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +12,10 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.escm.lbn.helpers.Constants;
+import com.escm.lbn.blogger.Item;
+import com.escm.lbn.R;
+import com.escm.lbn.activities.PostDetailActivity;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -71,7 +74,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context,PostDetailActivity.class);
+                Intent intent = new Intent(context, PostDetailActivity.class);
                 intent.putExtra("url",item.getUrl());
                 intent.putExtra("title",item.getTitle());
                 intent.putExtra("content",item.getContent());

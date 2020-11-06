@@ -1,4 +1,4 @@
-package com.escm.lbn;
+package com.escm.lbn.blogger;
 
 import retrofit2.Call;
 import retrofit2.Retrofit;

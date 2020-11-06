@@ -1,5 +1,5 @@
 
-package com.escm.lbn;
+package com.escm.lbn.blogger;
 
 import java.util.List;
 import com.google.gson.annotations.Expose;

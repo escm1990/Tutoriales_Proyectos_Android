@@ -16,11 +16,11 @@ import android.view.View;
 import android.widget.AbsListView;
 import android.widget.Toast;
 
-import com.escm.lbn.BloggerAPI;
-import com.escm.lbn.Constants;
-import com.escm.lbn.Item;
-import com.escm.lbn.PostAdapter;
-import com.escm.lbn.PostList;
+import com.escm.lbn.blogger.BloggerAPI;
+import com.escm.lbn.helpers.Constants;
+import com.escm.lbn.blogger.Item;
+import com.escm.lbn.adapter.PostAdapter;
+import com.escm.lbn.blogger.PostList;
 import com.escm.lbn.R;
 import com.github.ybq.android.spinkit.SpinKitView;
 import com.google.android.gms.ads.AdRequest;
@@ -99,7 +99,7 @@ public class PrincipalActivity extends AppCompatActivity {
                         finish();
                         break;
                     case R.id.nav_favoritos:
-                        Intent intent4 = new Intent(PrincipalActivity.this,FavoritosActivityFragments.class);
+                        Intent intent4 = new Intent(PrincipalActivity.this, FavoritosActivity.class);
                         startActivity(intent4);
                         finish();
                         break;

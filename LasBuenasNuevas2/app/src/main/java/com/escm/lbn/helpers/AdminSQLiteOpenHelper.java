@@ -1,4 +1,4 @@
-package com.escm.lbn;
+package com.escm.lbn.helpers;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

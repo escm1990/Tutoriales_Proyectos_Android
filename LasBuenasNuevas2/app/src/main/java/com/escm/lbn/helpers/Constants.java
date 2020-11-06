@@ -1,4 +1,4 @@
-package com.escm.lbn;
+package com.escm.lbn.helpers;
 
 public class Constants {
 

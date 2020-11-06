@@ -10,7 +10,7 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FavoritosActivity"
+    tools:context=".activities.FavoritosActivity"
     android:background="@android:color/white">
 
     <androidx.appcompat.widget.Toolbar
@@ -37,7 +37,7 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         ads:adSize="BANNER"
-        ads:adUnitId="@string/caBannerPruebasDesa">
+        ads:adUnitId="@string/caBannerFavoritos">
     </com.google.android.gms.ads.AdView>
 
 </RelativeLayout>

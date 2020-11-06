@@ -6,7 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.escm.lbn.Constants;
+import com.airbnb.lottie.LottieAnimationView;
+import com.escm.lbn.helpers.Constants;
 import com.escm.lbn.R;
 import com.google.android.gms.ads.MobileAds;
 

@@ -12,40 +12,39 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ConviccionesActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".DoctrinaActivity"
-            android:screenOrientation="portrait"/>
         <activity
-            android:name=".FavoritosActivity"
+            android:name=".activities.ConviccionesActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".AboutActivity"
+            android:name=".activities.DoctrinaActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".PostDetailActivity"
+            android:name=".activities.FavoritosActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".DetalleActivity"
+            android:name=".activities.AboutActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".PrincipalActivity"
+            android:name=".activities.PostDetailActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.DetalleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PrincipalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        </activity> <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="@string/caAdmobID"/>
-
+            android:value="@string/caAdmobID" />
     </application>
 
 </manifest>

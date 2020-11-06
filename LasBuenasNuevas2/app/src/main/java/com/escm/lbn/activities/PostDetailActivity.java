@@ -18,8 +18,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.escm.lbn.AdminSQLiteOpenHelper;
-import com.escm.lbn.Constants;
+import com.escm.lbn.helpers.AdminSQLiteOpenHelper;
+import com.escm.lbn.helpers.Constants;
 import com.escm.lbn.R;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;

@@ -10,7 +10,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".PostDetailActivity">
+        tools:context=".activities.PostDetailActivity">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar3"
@@ -104,7 +104,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
             ads:adSize="BANNER"
-            ads:adUnitId="@string/caBannerPruebasDesa">
+            ads:adUnitId="@string/caBannerDetalle">
         </com.google.android.gms.ads.AdView>
 
     </RelativeLayout>

@@ -42,6 +42,7 @@ dependencies {
     implementation 'androidx.drawerlayout:drawerlayout:1.1.1'
     implementation 'com.google.firebase:firebase-inappmessaging-display:19.0.7'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
@@ -96,5 +97,7 @@ dependencies {
     //SDK de Mobile Ads (anuncios con firebase)
     implementation 'com.google.firebase:firebase-ads:18.0.0'
 
+    //lottie
+    implementation "com.airbnb.android:lottie:3.4.0"
 
 }

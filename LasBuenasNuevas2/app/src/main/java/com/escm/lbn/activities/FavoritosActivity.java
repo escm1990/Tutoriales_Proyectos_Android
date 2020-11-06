@@ -17,10 +17,10 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.escm.lbn.AdminSQLiteOpenHelper;
-import com.escm.lbn.Constants;
-import com.escm.lbn.Favorito;
-import com.escm.lbn.ListaFavoritosAdapter;
+import com.escm.lbn.helpers.AdminSQLiteOpenHelper;
+import com.escm.lbn.helpers.Constants;
+import com.escm.lbn.entities.Favorito;
+import com.escm.lbn.adapter.FavoritosAdapter;
 import com.escm.lbn.R;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -110,7 +110,7 @@ public class FavoritosActivity extends AppCompatActivity {
 
         consultarListaFavoritos();
 
-        ListaFavoritosAdapter adapter = new ListaFavoritosAdapter(listaFavoritos);
+        FavoritosAdapter adapter = new FavoritosAdapter(listaFavoritos);
         adapter.setOnClicListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

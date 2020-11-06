@@ -10,7 +10,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".DoctrinaActivity">
+        tools:context=".activities.DoctrinaActivity">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbarDoctrina"
@@ -29,22 +29,23 @@
             android:layout_marginTop="1dp"
             android:gravity="center"
             android:orientation="vertical"
-            app:layout_constraintTop_toBottomOf="@id/toolbarDoctrina">
-
+            app:layout_constraintTop_toBottomOf="@id/toolbarDoctrina"
+            android:paddingBottom="60dp">
             <ScrollView
                 android:layout_width="326dp"
                 android:layout_height="500dp"
                 android:layout_marginTop="10dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
-                android:paddingBottom="20dp">
+                android:paddingTop="50dp"
+                android:paddingBottom="50dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <EditText
+                    <TextView
                         android:id="@+id/editTextTextMultiLine"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -83,7 +84,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
             ads:adSize="BANNER"
-            ads:adUnitId="@string/caBannerPruebasDesa">
+            ads:adUnitId="@string/caBannerDoctrina">
         </com.google.android.gms.ads.AdView>
 
     </RelativeLayout>

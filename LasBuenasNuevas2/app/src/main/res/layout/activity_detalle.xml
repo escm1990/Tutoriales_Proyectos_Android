@@ -11,7 +11,7 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetalleActivity">
+    tools:context=".activities.DetalleActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
