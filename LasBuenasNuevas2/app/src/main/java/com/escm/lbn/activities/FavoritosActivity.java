@@ -94,6 +94,11 @@ public class FavoritosActivity extends AppCompatActivity {
                         startActivity(intent3);
                         finish();
                         break;
+                    case R.id.nav_contacto:
+                        Intent intent7 = new Intent(FavoritosActivity.this,SendMailActivity.class);
+                        startActivity(intent7);
+                        finish();
+                        break;
                     case R.id.nav_about:
                         Intent intent2 = new Intent(FavoritosActivity.this,AboutActivity.class);
                         startActivity(intent2);

@@ -102,6 +102,11 @@ public class PostDetailActivity extends AppCompatActivity {
                         startActivity(intent3);
                         finish();
                         break;
+                    case R.id.nav_contacto:
+                        Intent intent7 = new Intent(PostDetailActivity.this,SendMailActivity.class);
+                        startActivity(intent7);
+                        finish();
+                        break;
                     case R.id.nav_about:
                         Intent intent2 = new Intent(PostDetailActivity.this,AboutActivity.class);
                         startActivity(intent2);

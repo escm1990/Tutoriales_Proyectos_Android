@@ -31,9 +31,11 @@
             android:orientation="vertical"
             app:layout_constraintTop_toBottomOf="@id/toolbarDoctrina"
             android:paddingBottom="60dp">
+
+
             <ScrollView
-                android:layout_width="326dp"
-                android:layout_height="500dp"
+                android:layout_width="match_parent"
+                android:layout_height="530dp"
                 android:layout_marginTop="10dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
@@ -42,33 +44,212 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/editTextTextMultiLine"
+                        android:textSize="20dp"
+                        android:id="@+id/selectDoctrina1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/textoDoctrina1"
+                        android:background="@drawable/textview_border"
+                        android:onClick="seleccion"
+                        android:paddingBottom="5dp"
+                        android:lines="2"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:textSize="20dp"
+                        android:id="@+id/selectDoctrina2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/textoDoctrina2"
+                        android:background="@drawable/textview_border"
+                        android:onClick="seleccion"
+                        android:paddingBottom="5dp"
+                        android:lines="2"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/selectDoctrina3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:gravity="start|top"
-                        android:inputType="textMultiLine"
-                        android:text="> La Inspiración de las Sagradas Escrituras. 2 Timoteo 3: 15-17; 2 Pedro 1:19-21
-                        \n\n> La Adorable Deidad en Tres Personas: Padre, Hijo, Espíritu Santo. Mateo 3: 16, 17; 28:19; Génesis 1:26; 3:22; 11:7; Juan 17:5, 24, 26: 16; 32; 14:16, 23; 2Pedro 1:17, 18; Apocalipsis 5. Mateo 17:1-5; Juan 18:5,6.
-                        \n\n> La Salvación por la fe en Cristo. Romanos 10: 13; Tito 2:11; Lucas 24:47; Tito 3:5-7; Juan 3:16.
-                        \n\n> El Nuevo Nacimiento. Juan 3:36, 1 Pedro 1:23, 1 Juan 3:9.
-                        \n\n> La Justificación por la Fe. Romanos 5:1; Tito 3:7.
-                        \n\n> El Bautismo en Agua por Inmersión, según lo ordenado por Cristo. Mateo 28:19; Hechos 8:36-39.
-                        \n\n> El Bautismo en el Espíritu Santo, subsecuente a la salvación, hablando en otras lenguas. Hechos 2:4; Lucas 24:49, Hechos 1:4, 8; 2:4.
-                        \n\n> La Sanidad Divina. Isaías 53:4; Mateo 8:16,17; Marcos 16:18; Santiago 5:14,15.
-                        \n\n> Los Dones del Espíritu Santo. 1 Corintios 12:1-11.
-                        \n\n> Los Frutos del Espíritu Santo. Gálatas 5:22-26.
-                        \n\n> La Santificación. Hebreos 12: 14; 1 Pedro 1:15,16; 1Tesalonicenses 4:3; 5:23; 1 Juan 2:6.
-                        \n\n> El Ministerio y la Evangelización. Marcos 16:15-20; Romanos 10:15.
-                        \n\n> El Diezmo y el Sostenimiento de la Obra. Génesis 14:20; 28:22; Mateo 24:14.
-                        \n\n> El Levantamiento de la Iglesia. 1 Tesalonicenses 4:16,17; Romanos 8:23; 1 Corintios 15: 51-52.
-                        \n\n> La Segunda Venida de Cristo. 2 Tesalonicenses 1:7; Tito 2:13; Zacarías 14: 1-9; Judas 14,15; Mateo 24:30-31.
-                        \n\n> El Reino Milenial. Apocalipsis 19:20; 20:3-10; Isaías 2:1-4; 11:5-10; Zacarías 9:10.
-                        \n\n> Cielos Nuevos y Tierra Nueva. 2 Pedro 3:13; Apocalipsis 21:1; Isaías 65:17; 66:22.  " />
+                        android:background="@drawable/textview_border"
+                        android:onClick="seleccion"
+                        android:text="@string/textoDoctrina3"
+                        android:textSize="20dp"
+                        android:paddingBottom="5dp"
+                        android:lines="2"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/selectDoctrina4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:onClick="seleccion"
+                        android:text="@string/textoDoctrina4"
+                        android:textSize="20dp"
+                        android:paddingBottom="5dp"
+                        android:lines="2"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/selectDoctrina5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:onClick="seleccion"
+                        android:text="@string/textoDoctrina5"
+                        android:textSize="20dp"
+                        android:paddingBottom="5dp"
+                        android:lines="2"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:textSize="20dp"
+                        android:id="@+id/selectDoctrina6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/textoDoctrina6"
+                        android:background="@drawable/textview_border"
+                        android:onClick="seleccion"
+                        android:paddingBottom="5dp"
+                        android:lines="2"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:textSize="20dp"
+                        android:id="@+id/selectDoctrina7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/textoDoctrina7"
+                        android:background="@drawable/textview_border"
+                        android:onClick="seleccion"
+                        android:paddingBottom="5dp"
+                        android:lines="2"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/selectDoctrina8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:onClick="seleccion"
+                        android:text="@string/textoDoctrina8"
+                        android:textSize="20dp"
+                        android:paddingBottom="5dp"
+                        android:lines="2"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/selectDoctrina9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:onClick="seleccion"
+                        android:text="@string/textoDoctrina9"
+                        android:textSize="20dp"
+                        android:paddingBottom="5dp"
+                        android:lines="2"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/selectDoctrina10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:onClick="seleccion"
+                        android:text="@string/textoDoctrina10"
+                        android:textSize="20dp"
+                        android:paddingBottom="5dp"
+                        android:lines="2"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/selectDoctrina11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:onClick="seleccion"
+                        android:text="@string/textoDoctrina11"
+                        android:textSize="20dp"
+                        android:paddingBottom="5dp"
+                        android:lines="2"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/selectDoctrina12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:onClick="seleccion"
+                        android:text="@string/textoDoctrina12"
+                        android:textSize="20dp"
+                        android:paddingBottom="5dp"
+                        android:lines="2"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/selectDoctrina13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:onClick="seleccion"
+                        android:text="@string/textoDoctrina13"
+                        android:textSize="20dp"
+                        android:paddingBottom="5dp"
+                        android:lines="2"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/selectDoctrina14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:onClick="seleccion"
+                        android:text="@string/textoDoctrina14"
+                        android:textSize="20dp" android:paddingBottom="5dp"
+                        android:lines="2"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/selectDoctrina15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:onClick="seleccion"
+                        android:text="@string/textoDoctrina15"
+                        android:textSize="20dp"
+                        android:paddingBottom="5dp"
+                        android:lines="2"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/selectDoctrina16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:onClick="seleccion"
+                        android:text="@string/textoDoctrina16"
+                        android:textSize="20dp"
+                        android:paddingBottom="5dp"
+                        android:lines="2"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/selectDoctrina17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:onClick="seleccion"
+                        android:text="@string/textoDoctrina17"
+                        android:textSize="20dp"
+                        android:paddingBottom="5dp"
+                        android:lines="2"
+                        android:gravity="center"/>
 
                 </LinearLayout>
 

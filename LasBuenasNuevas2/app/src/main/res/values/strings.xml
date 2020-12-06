@@ -4,6 +4,7 @@
     <string name="name_developer">Hecho por: Erick Cruz</string>
     <string name="name_position">Ingeniero de Sistemas Informáticos</string>
     <string name="contacto">Contacto Desarrollador: </string>
+    <string name="contacto2">Contáctanos</string>
     <string name="facebook">Facebook</string>
     <string name="derechosReservados">Buenas Nuevas - 2020</string>
     <string name="favoritos">Favoritos</string>
@@ -17,6 +18,84 @@
     <string name="caBannerConvicciones">ca-app-pub-9964175276885038/1511280265</string>
     <string name="caBannerDetalle">ca-app-pub-9964175276885038/2549029769</string>
     <string name="caBannerPruebasDesa">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="caBannerSendMail">ca-app-pub-9964175276885038/5867139851</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_mailer">MailerActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!--Doctrina-->
+    <string name="textoDoctrina1">La Inspiración de las Sagradas Escrituras.</string>
+    <string name="versosDoctrina1a" formatted="true">2° Timoteo 3:15-17</string>
+    <string name="versosDoctrina1b" formatted="true">2° Pedro 1:19-21</string>
+    <string name="textoDoctrina2">La Adorable Deidad en Tres Personas: Padre, Hijo, Espíritu Santo.</string>
+    <string name="versosDoctrina2a" formatted="true">Mateo 3:16-17; 28:19</string>
+    <string name="versosDoctrina2b" formatted="true">Génesis 1:26; 3:22; 11:7</string>
+    <string name="versosDoctrina2c" formatted="true">Juan 17:5, 24, 26: 16; 32; 14:16, 23</string>
+    <string name="versosDoctrina2d" formatted="true">2° Pedro 1:17-18</string>
+    <string name="versosDoctrina2e" formatted="true">Apocalipsis 5</string>
+    <string name="versosDoctrina2f" formatted="true">Mateo 17:1-5</string>
+    <string name="versosDoctrina2g" formatted="true">Juan 18:5,6</string>
+    <string name="textoDoctrina3">La Salvación por la fe en Cristo.</string>
+    <string name="versosDoctrina3a" formatted="true">Romanos 10:13</string>
+    <string name="versosDoctrina3b" formatted="true">Tito 2:11</string>
+    <string name="versosDoctrina3c" formatted="true">Lucas 24:47</string>
+    <string name="versosDoctrina3d" formatted="true">Juan 3:16</string>
+    <string name="versosDoctrina3e" formatted="true">Tito 3:5-7</string>
+    <string name="textoDoctrina4">El Nuevo Nacimiento.</string>
+    <string name="versosDoctrina4a" formatted="true">Juan 3:36</string>
+    <string name="versosDoctrina4b" formatted="true">1° Pedro 1:23</string>
+    <string name="versosDoctrina4c" formatted="true">1° Juan 3:9</string>
+    <string name="textoDoctrina5">La Justificación por la Fe.</string>
+    <string name="versosDoctrina5a" formatted="true">Romanos 5:1</string>
+    <string name="versosDoctrina5b" formatted="true">Tito 3:7</string>
+    <string name="textoDoctrina6">El Bautismo en Agua por Inmersión.</string>
+    <string name="versosDoctrina6a" formatted="true">Mateo 28:19</string>
+    <string name="versosDoctrina6b" formatted="true">Hechos 8:36-39</string>
+    <string name="textoDoctrina7">El Bautismo en el Espíritu Santo, y el hablar en lenguas.</string>
+    <string name="versosDoctrina7a" formatted="true">Lucas 24:49</string>
+    <string name="versosDoctrina7b" formatted="true">Hechos 1:4, 8; 2:4</string>
+    <string name="textoDoctrina8">Sanidad Divina.</string>
+    <string name="versosDoctrina8a" formatted="true">Isaías 53:4</string>
+    <string name="versosDoctrina8b" formatted="true">Mateo 8:16,-7</string>
+    <string name="versosDoctrina8c" formatted="true">Marcos 16:18</string>
+    <string name="versosDoctrina8d" formatted="true">Santiago 5:14,15</string>
+    <string name="textoDoctrina9">Los Dones del Espíritu Santo.</string>
+    <string name="versosDoctrina9a" formatted="true">1 Corintios 12:1-11</string>
+    <string name="textoDoctrina10">Los Frutos del Espíritu Santo.</string>
+    <string name="versosDoctrina10a" formatted="true">Gálatas 5:22-26</string>
+    <string name="textoDoctrina11">La Santificación.</string>
+    <string name="versosDoctrina11a" formatted="true">Hebreos 12:14</string>
+    <string name="versosDoctrina11b" formatted="true">1° Pedro 1:15,16</string>
+    <string name="versosDoctrina11c" formatted="true">1° Tesalonicenses 4:3; 5:23</string>
+    <string name="versosDoctrina11d" formatted="true">1° Juan 2:6</string>
+    <string name="textoDoctrina12">El Ministerio y la Evangelización.</string>
+    <string name="versosDoctrina12a" formatted="true">Marcos 16:15-20</string>
+    <string name="versosDoctrina12b" formatted="true">Romanos 10:15</string>
+    <string name="textoDoctrina13">El Diezmo y el Sostenimiento de la Obra.</string>
+    <string name="versosDoctrina13a" formatted="true">Génesis 14:20; 28:22</string>
+    <string name="versosDoctrina13b" formatted="true">Mateo 24:14</string>
+    <string name="textoDoctrina14">El Levantamiento de la Iglesia.</string>
+    <string name="versosDoctrina14a" formatted="true">1° Tesalonicenses 4:16-17</string>
+    <string name="versosDoctrina14b" formatted="true">Romanos 8:23</string>
+    <string name="versosDoctrina14c" formatted="true">1° Corintios 15: 51-52</string>
+    <string name="textoDoctrina15">La Segunda Venida de Cristo.</string>
+    <string name="versosDoctrina15a" formatted="true">2° Tesalonicenses 1:7</string>
+    <string name="versosDoctrina15b" formatted="true">Tito 2:13</string>
+    <string name="versosDoctrina15c" formatted="true">Zacarías 14: 1-9</string>
+    <string name="versosDoctrina15d" formatted="true">Judas 14,15</string>
+    <string name="versosDoctrina15e" formatted="true"> Mateo 24:30-31</string>
+    <string name="textoDoctrina16">El Reino Milenial.</string>
+    <string name="versosDoctrina16a" formatted="true">Apocalipsis 19:20; 20:3-10</string>
+    <string name="versosDoctrina16b" formatted="true">Isaías 2:1-4; 11:5-10</string>
+    <string name="versosDoctrina16c" formatted="true">Zacarías 9:10</string>
+    <string name="textoDoctrina17">Cielos Nuevos y Tierra Nueva.</string>
+    <string name="versosDoctrina17a" formatted="true">2° Pedro 3:13</string>
+    <string name="versosDoctrina17b" formatted="true">Apocalipsis 21:1</string>
+    <string name="versosDoctrina17c" formatted="true">Isaías 65:17; 66:22</string>
 </resources>

@@ -109,6 +109,11 @@ public class PrincipalActivity extends AppCompatActivity {
                         startActivity(intent3);
                         finish();
                         break;
+                    case R.id.nav_contacto:
+                        Intent intent7 = new Intent(PrincipalActivity.this,SendMailActivity.class);
+                        startActivity(intent7);
+                        finish();
+                        break;
                     case R.id.nav_about:
                         Intent intent2 = new Intent(PrincipalActivity.this,AboutActivity.class);
                         startActivity(intent2);

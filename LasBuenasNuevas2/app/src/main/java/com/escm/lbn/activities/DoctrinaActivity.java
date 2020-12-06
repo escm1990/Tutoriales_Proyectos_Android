@@ -10,9 +10,11 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.escm.lbn.helpers.Constants;
 import com.escm.lbn.R;
+import com.escm.lbn.popus.*;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
@@ -27,6 +29,7 @@ public class DoctrinaActivity extends AppCompatActivity {
     NavigationView navigationView;
     Toolbar toolbar;
     private AdView mAdView;
+    Intent intentDoctrina;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,6 +83,11 @@ public class DoctrinaActivity extends AppCompatActivity {
                         startActivity(intent3);
                         finish();
                         break;
+                    case R.id.nav_contacto:
+                        Intent intent7 = new Intent(DoctrinaActivity.this,SendMailActivity.class);
+                        startActivity(intent7);
+                        finish();
+                        break;
                     case R.id.nav_about:
                         Intent intent2 = new Intent(DoctrinaActivity.this,AboutActivity.class);
                         startActivity(intent2);
@@ -99,4 +107,113 @@ public class DoctrinaActivity extends AppCompatActivity {
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
     }
+
+    public void seleccion(View view){
+        switch (view.getId()){
+            case R.id.selectDoctrina1:
+                intentDoctrina= null;
+                intentDoctrina = new Intent(this, DoctrinaPopupActivity.class);
+                intentDoctrina.putExtra("layout", R.layout.activity_doctrina_popup1);
+                startActivity(intentDoctrina);
+                break;
+            case R.id.selectDoctrina2:
+                intentDoctrina= null;
+                intentDoctrina = new Intent(this, DoctrinaPopupActivity.class);
+                intentDoctrina.putExtra("layout", R.layout.activity_doctrina_popup2);
+                startActivity(intentDoctrina);
+                break;
+            case R.id.selectDoctrina3:
+                intentDoctrina= null;
+                intentDoctrina = new Intent(this, DoctrinaPopupActivity.class);
+                intentDoctrina.putExtra("layout", R.layout.activity_doctrina_popup3);
+                startActivity(intentDoctrina);
+                break;
+            case R.id.selectDoctrina4:
+                intentDoctrina= null;
+                intentDoctrina = new Intent(this, DoctrinaPopupActivity.class);
+                intentDoctrina.putExtra("layout", R.layout.activity_doctrina_popup4);
+                startActivity(intentDoctrina);
+                break;
+            case R.id.selectDoctrina5:
+                intentDoctrina= null;
+                intentDoctrina = new Intent(this, DoctrinaPopupActivity.class);
+                intentDoctrina.putExtra("layout", R.layout.activity_doctrina_popup5);
+                startActivity(intentDoctrina);
+                break;
+            case R.id.selectDoctrina6:
+                intentDoctrina= null;
+                intentDoctrina = new Intent(this, DoctrinaPopupActivity.class);
+                intentDoctrina.putExtra("layout", R.layout.activity_doctrina_popup6);
+                startActivity(intentDoctrina);
+                break;
+            case R.id.selectDoctrina7:
+                intentDoctrina= null;
+                intentDoctrina = new Intent(this, DoctrinaPopupActivity.class);
+                intentDoctrina.putExtra("layout", R.layout.activity_doctrina_popup7);
+                startActivity(intentDoctrina);
+                break;
+            case R.id.selectDoctrina8:
+                intentDoctrina= null;
+                intentDoctrina = new Intent(this, DoctrinaPopupActivity.class);
+                intentDoctrina.putExtra("layout", R.layout.activity_doctrina_popup8);
+                startActivity(intentDoctrina);
+                break;
+            case R.id.selectDoctrina9:
+                intentDoctrina= null;
+                intentDoctrina = new Intent(this, DoctrinaPopupActivity.class);
+                intentDoctrina.putExtra("layout", R.layout.activity_doctrina_popup9);
+                startActivity(intentDoctrina);
+                break;
+            case R.id.selectDoctrina10:
+                intentDoctrina= null;
+                intentDoctrina = new Intent(this, DoctrinaPopupActivity.class);
+                intentDoctrina.putExtra("layout", R.layout.activity_doctrina_popup10);
+                startActivity(intentDoctrina);
+                break;
+            case R.id.selectDoctrina11:
+                intentDoctrina= null;
+                intentDoctrina = new Intent(this, DoctrinaPopupActivity.class);
+                intentDoctrina.putExtra("layout", R.layout.activity_doctrina_popup11);
+                startActivity(intentDoctrina);
+                break;
+            case R.id.selectDoctrina12:
+                intentDoctrina= null;
+                intentDoctrina = new Intent(this, DoctrinaPopupActivity.class);
+                intentDoctrina.putExtra("layout", R.layout.activity_doctrina_popup12);
+                startActivity(intentDoctrina);
+                break;
+            case R.id.selectDoctrina13:
+                intentDoctrina= null;
+                intentDoctrina = new Intent(this, DoctrinaPopupActivity.class);
+                intentDoctrina.putExtra("layout", R.layout.activity_doctrina_popup13);
+                startActivity(intentDoctrina);
+                break;
+            case R.id.selectDoctrina14:
+                intentDoctrina= null;
+                intentDoctrina = new Intent(this, DoctrinaPopupActivity.class);
+                intentDoctrina.putExtra("layout", R.layout.activity_doctrina_popup14);
+                startActivity(intentDoctrina);
+                break;
+            case R.id.selectDoctrina15:
+                intentDoctrina= null;
+                intentDoctrina = new Intent(this, DoctrinaPopupActivity.class);
+                intentDoctrina.putExtra("layout", R.layout.activity_doctrina_popup15);
+                startActivity(intentDoctrina);
+                break;
+            case R.id.selectDoctrina16:
+                intentDoctrina= null;
+                intentDoctrina = new Intent(this, DoctrinaPopupActivity.class);
+                intentDoctrina.putExtra("layout", R.layout.activity_doctrina_popup16);
+                startActivity(intentDoctrina);
+                break;
+            case R.id.selectDoctrina17:
+                intentDoctrina= null;
+                intentDoctrina = new Intent(this, DoctrinaPopupActivity.class);
+                intentDoctrina.putExtra("layout", R.layout.activity_doctrina_popup17);
+                startActivity(intentDoctrina);
+                break;
+
+        }
+    }
+
 }
