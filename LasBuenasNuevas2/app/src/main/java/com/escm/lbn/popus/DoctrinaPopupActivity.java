@@ -24,7 +24,7 @@ public class DoctrinaPopupActivity extends AppCompatActivity {
         int ancho = medidaVentana.widthPixels;
         int alto = medidaVentana.heightPixels;
 
-        getWindow().setLayout((int)(ancho*0.80),(int)(alto*0.6));
+        getWindow().setLayout((int)(ancho*0.80),(int)(alto*0.53));
 
     }
 }

@@ -5,4 +5,6 @@
     <color name="colorAccent">#03A9F4</color>
     <color name="colorBackground">#000000</color>
     <color name="colorBackgroundPopup">#97D4FD</color>
+    <color name="colorConvicciones">#BBDEFB</color>
+    <color name="colorMargenPopup">#2F97F4</color>
 </resources>

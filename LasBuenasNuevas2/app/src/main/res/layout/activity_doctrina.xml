@@ -32,14 +32,27 @@
             app:layout_constraintTop_toBottomOf="@id/toolbarDoctrina"
             android:paddingBottom="60dp">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿En qué creemos?"
+                android:textStyle="bold"
+                android:layout_marginTop="60dp"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Presiona cada elemento para ver la referencia bíblica."
+                android:textStyle="bold"
+                android:textSize="10dp"/>
 
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="530dp"
-                android:layout_marginTop="10dp"
+                android:layout_height="445dp"
+                android:layout_marginTop="5dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
-                android:paddingTop="50dp"
                 android:paddingBottom="50dp">
 
                 <LinearLayout
@@ -47,209 +60,174 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:textSize="20dp"
+                    <Button
                         android:id="@+id/selectDoctrina1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina1"
-                        android:background="@drawable/textview_border"
                         android:onClick="seleccion"
-                        android:paddingBottom="5dp"
-                        android:lines="2"
-                        android:gravity="center"/>
+                        android:background="@drawable/wp_conv1"/>
 
-                    <TextView
-                        android:textSize="20dp"
+                    <Button
                         android:id="@+id/selectDoctrina2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina2"
-                        android:background="@drawable/textview_border"
                         android:onClick="seleccion"
-                        android:paddingBottom="5dp"
-                        android:lines="2"
-                        android:gravity="center"/>
+                        android:background="@drawable/wp_conv1"
+                        android:layout_marginTop="10dp"/>
 
-                    <TextView
+                    <Button
                         android:id="@+id/selectDoctrina3"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/textview_border"
-                        android:onClick="seleccion"
+                        android:layout_height="40dp"
+                        android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina3"
-                        android:textSize="20dp"
-                        android:paddingBottom="5dp"
-                        android:lines="2"
-                        android:gravity="center"/>
+                        android:onClick="seleccion"
+                        android:background="@drawable/wp_conv1"
+                        android:layout_marginTop="10dp"/>
 
-                    <TextView
+                    <Button
                         android:id="@+id/selectDoctrina4"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/textview_border"
-                        android:onClick="seleccion"
+                        android:layout_height="40dp"
+                        android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina4"
-                        android:textSize="20dp"
-                        android:paddingBottom="5dp"
-                        android:lines="2"
-                        android:gravity="center"/>
+                        android:onClick="seleccion"
+                        android:background="@drawable/wp_conv1"
+                        android:layout_marginTop="10dp"/>
 
-                    <TextView
+                    <Button
                         android:id="@+id/selectDoctrina5"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/textview_border"
-                        android:onClick="seleccion"
+                        android:layout_height="40dp"
+                        android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina5"
-                        android:textSize="20dp"
-                        android:paddingBottom="5dp"
-                        android:lines="2"
-                        android:gravity="center"/>
+                        android:onClick="seleccion"
+                        android:background="@drawable/wp_conv1"
+                        android:layout_marginTop="10dp"/>
 
-                    <TextView
-                        android:textSize="20dp"
+                    <Button
                         android:id="@+id/selectDoctrina6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina6"
-                        android:background="@drawable/textview_border"
                         android:onClick="seleccion"
-                        android:paddingBottom="5dp"
-                        android:lines="2"
-                        android:gravity="center"/>
+                        android:background="@drawable/wp_conv1"
+                        android:layout_marginTop="10dp"/>
 
-                    <TextView
-                        android:textSize="20dp"
+                    <Button
                         android:id="@+id/selectDoctrina7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina7"
-                        android:background="@drawable/textview_border"
                         android:onClick="seleccion"
-                        android:paddingBottom="5dp"
-                        android:lines="2"
-                        android:gravity="center"/>
+                        android:background="@drawable/wp_conv1"
+                        android:layout_marginTop="10dp"/>
 
-                    <TextView
+                    <Button
                         android:id="@+id/selectDoctrina8"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/textview_border"
-                        android:onClick="seleccion"
+                        android:layout_height="40dp"
+                        android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina8"
-                        android:textSize="20dp"
-                        android:paddingBottom="5dp"
-                        android:lines="2"
-                        android:gravity="center"/>
+                        android:onClick="seleccion"
+                        android:background="@drawable/wp_conv1"
+                        android:layout_marginTop="10dp"/>
 
-                    <TextView
+                    <Button
                         android:id="@+id/selectDoctrina9"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/textview_border"
-                        android:onClick="seleccion"
+                        android:layout_height="40dp"
+                        android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina9"
-                        android:textSize="20dp"
-                        android:paddingBottom="5dp"
-                        android:lines="2"
-                        android:gravity="center"/>
+                        android:onClick="seleccion"
+                        android:background="@drawable/wp_conv1"
+                        android:layout_marginTop="10dp"/>
 
-                    <TextView
+                    <Button
                         android:id="@+id/selectDoctrina10"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/textview_border"
-                        android:onClick="seleccion"
+                        android:layout_height="40dp"
+                        android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina10"
-                        android:textSize="20dp"
-                        android:paddingBottom="5dp"
-                        android:lines="2"
-                        android:gravity="center"/>
+                        android:onClick="seleccion"
+                        android:background="@drawable/wp_conv1"
+                        android:layout_marginTop="10dp"/>
 
-                    <TextView
+                    <Button
                         android:id="@+id/selectDoctrina11"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/textview_border"
-                        android:onClick="seleccion"
+                        android:layout_height="40dp"
+                        android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina11"
-                        android:textSize="20dp"
-                        android:paddingBottom="5dp"
-                        android:lines="2"
-                        android:gravity="center"/>
+                        android:onClick="seleccion"
+                        android:background="@drawable/wp_conv1"
+                        android:layout_marginTop="10dp"/>
 
-                    <TextView
+                    <Button
                         android:id="@+id/selectDoctrina12"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/textview_border"
-                        android:onClick="seleccion"
+                        android:layout_height="40dp"
+                        android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina12"
-                        android:textSize="20dp"
-                        android:paddingBottom="5dp"
-                        android:lines="2"
-                        android:gravity="center"/>
+                        android:onClick="seleccion"
+                        android:background="@drawable/wp_conv1"
+                        android:layout_marginTop="10dp"/>
 
-                    <TextView
+                    <Button
                         android:id="@+id/selectDoctrina13"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/textview_border"
-                        android:onClick="seleccion"
+                        android:layout_height="40dp"
+                        android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina13"
-                        android:textSize="20dp"
-                        android:paddingBottom="5dp"
-                        android:lines="2"
-                        android:gravity="center"/>
+                        android:onClick="seleccion"
+                        android:background="@drawable/wp_conv1"
+                        android:layout_marginTop="10dp"/>
 
-                    <TextView
+                    <Button
                         android:id="@+id/selectDoctrina14"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/textview_border"
-                        android:onClick="seleccion"
+                        android:layout_height="40dp"
+                        android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina14"
-                        android:textSize="20dp" android:paddingBottom="5dp"
-                        android:lines="2"
-                        android:gravity="center"
-                        />
+                        android:onClick="seleccion"
+                        android:background="@drawable/wp_conv1"
+                        android:layout_marginTop="10dp"/>
 
-                    <TextView
+                    <Button
                         android:id="@+id/selectDoctrina15"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/textview_border"
-                        android:onClick="seleccion"
+                        android:layout_height="40dp"
+                        android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina15"
-                        android:textSize="20dp"
-                        android:paddingBottom="5dp"
-                        android:lines="2"
-                        android:gravity="center"/>
+                        android:onClick="seleccion"
+                        android:background="@drawable/wp_conv1"
+                        android:layout_marginTop="10dp"/>
 
-                    <TextView
+                    <Button
                         android:id="@+id/selectDoctrina16"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/textview_border"
-                        android:onClick="seleccion"
+                        android:layout_height="40dp"
+                        android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina16"
-                        android:textSize="20dp"
-                        android:paddingBottom="5dp"
-                        android:lines="2"
-                        android:gravity="center"/>
+                        android:onClick="seleccion"
+                        android:background="@drawable/wp_conv1"
+                        android:layout_marginTop="10dp"/>
 
-                    <TextView
+                    <Button
                         android:id="@+id/selectDoctrina17"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/textview_border"
-                        android:onClick="seleccion"
+                        android:layout_height="40dp"
+                        android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina17"
-                        android:textSize="20dp"
-                        android:paddingBottom="5dp"
-                        android:lines="2"
-                        android:gravity="center"/>
+                        android:onClick="seleccion"
+                        android:background="@drawable/wp_conv1"
+                        android:layout_marginTop="10dp"/>
 
                 </LinearLayout>
 

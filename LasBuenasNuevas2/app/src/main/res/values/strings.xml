@@ -98,4 +98,23 @@
     <string name="versosDoctrina17a" formatted="true">2° Pedro 3:13</string>
     <string name="versosDoctrina17b" formatted="true">Apocalipsis 21:1</string>
     <string name="versosDoctrina17c" formatted="true">Isaías 65:17; 66:22</string>
+    <!-- No hay conexión a internet-->
+    <string name="oops">Oops!</string>
+    <string name="nosenal">Parece que no hay acceso a internet. Comprueba tu conexión y vuelve a intentarlo.</string>
+    <string name="volerintentar">Volver a Intentarlo</string>
+    <!-- Convicciones -->
+    <string name="textoConviccion1">Nuestra visión: El mundo para Cristo.</string>
+    <string name="textoConviccion2">Nuestra pasión: La Salvación de las almas</string>
+    <string name="textoConviccion3">Nuestra preocupación: La bendición de Dios.</string>
+    <string name="textoConviccion4">Nuestra fuerza: La Unción del Espíritu Santo.</string>
+    <string name="textoConviccion5">Nuestros intereses: Los del Reino de los Cielos.</string>
+    <string name="textoConviccion6">Nuestra arma: La Palabra de Dios.</string>
+    <string name="textoConviccion7">Nuestra doctrina: Fundamentalmente Bíblicas.</string>
+    <string name="textoConviccion8">Nuestras normas: Las más altas.</string>
+    <string name="textoConviccion9">Nuestras fronteras: El mundo.</string>
+    <string name="textoConviccion10">Nuestra decisión: Hasta la muerte.</string>
+    <string name="textoConviccion11">Nuestro anhelo: El Rapto de la Iglesia.</string>
+    <string name="textoConviccion12">Nuestra recompensa: Coronas en el Cielo.</string>
+    <string name="textoConviccion13">Nuestra gran fiesta: Las Bodas del Cordero.</string>
+    <string name="textoConviccion14">Nuestro hogar: La Nueva Jerusalén, en el Cielo.</string>
 </resources>

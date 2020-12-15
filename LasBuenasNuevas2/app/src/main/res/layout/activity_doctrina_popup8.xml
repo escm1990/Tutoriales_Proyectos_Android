@@ -5,9 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:background="@color/colorBackgroundPopup">
+    android:padding="5dp"
+    android:background="@color/colorMargenPopup">
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/wp_conv3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
     <ImageView
         android:layout_width="88dp"
         android:layout_height="53dp"
@@ -41,5 +57,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/versosDoctrina8d" />
+
+</LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>

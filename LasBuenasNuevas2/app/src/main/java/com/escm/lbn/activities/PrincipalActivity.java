@@ -188,6 +188,9 @@ public class PrincipalActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<PostList> call, Throwable t) {
                 Toast.makeText(PrincipalActivity.this, "Error al cargar lista de post", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(PrincipalActivity.this,NoRedActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
     }
