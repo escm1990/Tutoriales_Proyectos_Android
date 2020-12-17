@@ -96,12 +96,6 @@ public class PostDetailActivity extends AppCompatActivity {
                         startActivity(intent4);
                         finish();
                         break;
-                    case R.id.nav_facebook:
-                        Uri uri = Uri.parse(Constants.url_facebook);
-                        Intent intent3 = new Intent(Intent.ACTION_VIEW,uri);
-                        startActivity(intent3);
-                        finish();
-                        break;
                     case R.id.nav_contacto:
                         Intent intent7 = new Intent(PostDetailActivity.this,SendMailActivity.class);
                         startActivity(intent7);

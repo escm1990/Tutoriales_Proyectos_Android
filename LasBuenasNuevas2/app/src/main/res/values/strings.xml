@@ -1,12 +1,7 @@
 <resources>
     <string name="app_name">Buenas Nuevas</string>
     <string name="navbarH">Hola</string>
-    <string name="name_developer">Hecho por: Erick Cruz</string>
-    <string name="name_position">Ingeniero de Sistemas Informáticos</string>
-    <string name="contacto">Contacto Desarrollador: </string>
     <string name="contacto2">Contáctanos</string>
-    <string name="facebook">Facebook</string>
-    <string name="derechosReservados">Buenas Nuevas - 2020</string>
     <string name="favoritos">Favoritos</string>
     <string name="doctrina">Doctrina</string>
     <string name="convicciones">Convicciones</string>
@@ -57,7 +52,7 @@
     <string name="textoDoctrina6">El Bautismo en Agua por Inmersión.</string>
     <string name="versosDoctrina6a" formatted="true">Mateo 28:19</string>
     <string name="versosDoctrina6b" formatted="true">Hechos 8:36-39</string>
-    <string name="textoDoctrina7">El Bautismo en el Espíritu Santo, y el hablar en lenguas.</string>
+    <string name="textoDoctrina7">El Bautismo en el Espíritu Santo y hablar en lenguas.</string>
     <string name="versosDoctrina7a" formatted="true">Lucas 24:49</string>
     <string name="versosDoctrina7b" formatted="true">Hechos 1:4, 8; 2:4</string>
     <string name="textoDoctrina8">Sanidad Divina.</string>
@@ -117,4 +112,12 @@
     <string name="textoConviccion12">Nuestra recompensa: Coronas en el Cielo.</string>
     <string name="textoConviccion13">Nuestra gran fiesta: Las Bodas del Cordero.</string>
     <string name="textoConviccion14">Nuestro hogar: La Nueva Jerusalén, en el Cielo.</string>
+    <!--Correo-->
+    <string name="correo">¿Necesitas consejería u oración? Comunícate con nosotros. Estaremos orando por ti.</string>
+    <!--Acerca de-->
+    <string name="facebook">Búscanos en Facebook</string>
+    <string name="twitter">Síguenos en Twitter</string>
+    <string name="linkedinDesa">Desarrollador</string>
+    <string name="blogger">Versión Web</string>
+    <string name="derechosReservados">Buenas Nuevas - 2020</string>
 </resources>

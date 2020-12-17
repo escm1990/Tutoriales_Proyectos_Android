@@ -54,12 +54,6 @@ class NoRedActivity : AppCompatActivity() {
                     startActivity(intent4)
                     finish()
                 }
-                R.id.nav_facebook -> {
-                    val uri = Uri.parse(Constants.url_facebook)
-                    val intent3 = Intent(Intent.ACTION_VIEW, uri)
-                    startActivity(intent3)
-                    finish()
-                }
                 R.id.nav_contacto -> {
                     val intent7 = Intent(this, SendMailActivity::class.java)
                     startActivity(intent7)

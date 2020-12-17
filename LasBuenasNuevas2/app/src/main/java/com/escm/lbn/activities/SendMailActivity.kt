@@ -59,12 +59,6 @@ class SendMailActivity : AppCompatActivity(), MainViewInterface{
                     startActivity(intent4)
                     finish()
                 }
-                R.id.nav_facebook -> {
-                    val uri = Uri.parse(Constants.url_facebook)
-                    val intent3 = Intent(Intent.ACTION_VIEW, uri)
-                    startActivity(intent3)
-                    finish()
-                }
                 R.id.nav_contacto -> {
                     val intent7 = Intent(this@SendMailActivity, SendMailActivity::class.java)
                     startActivity(intent7)
@@ -106,6 +100,9 @@ class SendMailActivity : AppCompatActivity(), MainViewInterface{
                     if(it) {
                         Toast.makeText(this, "Correo enviado exitosamente", Toast.LENGTH_SHORT).show()
                         hideProgress()
+                        sm_nombre.setText("")
+                        sm_email.setText("")
+                        sm_comentarios.setText("")
                     }else{
                         Toast.makeText(this, "Ocurrió un problema al enviar correo", Toast.LENGTH_SHORT).show()
                         hideProgress()
@@ -113,6 +110,7 @@ class SendMailActivity : AppCompatActivity(), MainViewInterface{
                 })
             } else {
                 Toast.makeText(this, "Los campos NO pueden quedar vacíos", Toast.LENGTH_SHORT).show()
+                hideProgress()
             }
         }
     }

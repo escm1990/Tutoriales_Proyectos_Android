@@ -24,7 +24,7 @@ import com.google.android.material.navigation.NavigationView;
 
 public class AboutActivity extends AppCompatActivity {
 
-    Button botonLinkedin;
+    Button botonLinkedin, botonFacebook, botonTwitter, botonBlogger;
 
     ActionBarDrawerToggle actionBarDrawerToggle;
     DrawerLayout drawerLayout;
@@ -78,12 +78,6 @@ public class AboutActivity extends AppCompatActivity {
                         startActivity(intent4);
                         finish();
                         break;
-                    case R.id.nav_facebook:
-                        Uri uri = Uri.parse(Constants.url_facebook);
-                        Intent intent3 = new Intent(Intent.ACTION_VIEW,uri);
-                        startActivity(intent3);
-                        finish();
-                        break;
                     case R.id.nav_contacto:
                         Intent intent7 = new Intent(AboutActivity.this,SendMailActivity.class);
                         startActivity(intent7);
@@ -104,7 +98,43 @@ public class AboutActivity extends AppCompatActivity {
         botonLinkedin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri = Uri.parse(Constants.utl_linkedin);
+                Uri uri = Uri.parse(Constants.url_linkedin);
+                Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        botonFacebook = (Button) findViewById(R.id.btn_facebook);
+
+        botonFacebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse(Constants.url_facebook);
+                Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        botonTwitter = (Button) findViewById(R.id.btn_twitter);
+
+        botonTwitter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse(Constants.url_twitter);
+                Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        botonBlogger = (Button) findViewById(R.id.btn_blogger);
+
+        botonBlogger.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse(Constants.url_blogger);
                 Intent intent = new Intent(Intent.ACTION_VIEW,uri);
                 startActivity(intent);
                 finish();
@@ -112,13 +142,14 @@ public class AboutActivity extends AppCompatActivity {
         });
 
         //probar crashlitycs
+        /*
         Button crashButton = (Button) findViewById(R.id.buttonCrash);
         crashButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 throw new RuntimeException("Test Crash"); // Force a crash
             }
         });
-
+*/
     }
 
     private void setUpToolbar() {

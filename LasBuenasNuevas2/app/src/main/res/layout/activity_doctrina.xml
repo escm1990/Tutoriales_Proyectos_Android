@@ -38,14 +38,16 @@
                 android:text="¿En qué creemos?"
                 android:textStyle="bold"
                 android:layout_marginTop="60dp"
-                android:textSize="25dp"/>
+                android:textSize="25dp"
+                android:textColor="#000000"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Presiona cada elemento para ver la referencia bíblica."
                 android:textStyle="bold"
-                android:textSize="10dp"/>
+                android:textSize="10dp"
+                android:textColor="#000000"/>
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -67,7 +69,9 @@
                         android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina1"
                         android:onClick="seleccion"
-                        android:background="@drawable/wp_conv1"/>
+                        android:background="@drawable/botoncorreo"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina2"
@@ -76,8 +80,11 @@
                         android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina2"
                         android:onClick="seleccion"
-                        android:background="@drawable/wp_conv1"
-                        android:layout_marginTop="10dp"/>
+                        android:background="@drawable/botoncorreo"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12dp"
+                        />
 
                     <Button
                         android:id="@+id/selectDoctrina3"
@@ -86,8 +93,10 @@
                         android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina3"
                         android:onClick="seleccion"
-                        android:background="@drawable/wp_conv1"
-                        android:layout_marginTop="10dp"/>
+                        android:background="@drawable/botoncorreo"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12dp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina4"
@@ -96,8 +105,10 @@
                         android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina4"
                         android:onClick="seleccion"
-                        android:background="@drawable/wp_conv1"
-                        android:layout_marginTop="10dp"/>
+                        android:background="@drawable/botoncorreo"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12dp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina5"
@@ -106,8 +117,10 @@
                         android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina5"
                         android:onClick="seleccion"
-                        android:background="@drawable/wp_conv1"
-                        android:layout_marginTop="10dp"/>
+                        android:background="@drawable/botoncorreo"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12dp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina6"
@@ -116,8 +129,10 @@
                         android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina6"
                         android:onClick="seleccion"
-                        android:background="@drawable/wp_conv1"
-                        android:layout_marginTop="10dp"/>
+                        android:background="@drawable/botoncorreo"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12dp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina7"
@@ -126,8 +141,10 @@
                         android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina7"
                         android:onClick="seleccion"
-                        android:background="@drawable/wp_conv1"
-                        android:layout_marginTop="10dp"/>
+                        android:background="@drawable/botoncorreo"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12dp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina8"
@@ -136,8 +153,10 @@
                         android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina8"
                         android:onClick="seleccion"
-                        android:background="@drawable/wp_conv1"
-                        android:layout_marginTop="10dp"/>
+                        android:background="@drawable/botoncorreo"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12dp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina9"
@@ -146,8 +165,10 @@
                         android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina9"
                         android:onClick="seleccion"
-                        android:background="@drawable/wp_conv1"
-                        android:layout_marginTop="10dp"/>
+                        android:background="@drawable/botoncorreo"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12dp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina10"
@@ -156,8 +177,10 @@
                         android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina10"
                         android:onClick="seleccion"
-                        android:background="@drawable/wp_conv1"
-                        android:layout_marginTop="10dp"/>
+                        android:background="@drawable/botoncorreo"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12dp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina11"
@@ -166,8 +189,10 @@
                         android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina11"
                         android:onClick="seleccion"
-                        android:background="@drawable/wp_conv1"
-                        android:layout_marginTop="10dp"/>
+                        android:background="@drawable/botoncorreo"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12dp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina12"
@@ -176,8 +201,10 @@
                         android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina12"
                         android:onClick="seleccion"
-                        android:background="@drawable/wp_conv1"
-                        android:layout_marginTop="10dp"/>
+                        android:background="@drawable/botoncorreo"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12dp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina13"
@@ -186,8 +213,10 @@
                         android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina13"
                         android:onClick="seleccion"
-                        android:background="@drawable/wp_conv1"
-                        android:layout_marginTop="10dp"/>
+                        android:background="@drawable/botoncorreo"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12dp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina14"
@@ -196,8 +225,10 @@
                         android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina14"
                         android:onClick="seleccion"
-                        android:background="@drawable/wp_conv1"
-                        android:layout_marginTop="10dp"/>
+                        android:background="@drawable/botoncorreo"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12dp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina15"
@@ -206,8 +237,10 @@
                         android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina15"
                         android:onClick="seleccion"
-                        android:background="@drawable/wp_conv1"
-                        android:layout_marginTop="10dp"/>
+                        android:background="@drawable/botoncorreo"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12dp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina16"
@@ -216,8 +249,10 @@
                         android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina16"
                         android:onClick="seleccion"
-                        android:background="@drawable/wp_conv1"
-                        android:layout_marginTop="10dp"/>
+                        android:background="@drawable/botoncorreo"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12dp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina17"
@@ -226,8 +261,10 @@
                         android:fadingEdge="vertical|none"
                         android:text="@string/textoDoctrina17"
                         android:onClick="seleccion"
-                        android:background="@drawable/wp_conv1"
-                        android:layout_marginTop="10dp"/>
+                        android:background="@drawable/botoncorreo"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12dp"/>
 
                 </LinearLayout>
 
