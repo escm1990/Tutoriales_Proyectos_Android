@@ -1,7 +1,6 @@
 package com.escm.lbn.activities
 
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -12,23 +11,33 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.escm.lbn.R
-import com.escm.lbn.helpers.Constants
 import com.escm.lbn.mailer.MainViewInterface
 import com.escm.lbn.mailer.MainViewModel
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_send_mail.*
 
-class SendMailActivity : AppCompatActivity(), MainViewInterface{
+class SendMailActivity : AppCompatActivity(), MainViewInterface {
 
     var actionBarDrawerToggle: ActionBarDrawerToggle? = null
     var drawerLayout: DrawerLayout? = null
     lateinit var navigationView: NavigationView
     var toolbar: Toolbar? = null
+    lateinit var mAdView : AdView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_send_mail)
+
+        //mostrar anuncios
+        MobileAds.initialize(this) { }
+
+        mAdView = findViewById(R.id.adViewBannerSendMail)
+        val adRequest = AdRequest.Builder().build()
+        mAdView.loadAd(adRequest)
 
         //Barra de herramientas
         toolbar = findViewById<View>(R.id.toolbarSendMail) as Toolbar
@@ -96,14 +105,14 @@ class SendMailActivity : AppCompatActivity(), MainViewInterface{
             showProgress()
             if(nombre.isNotEmpty() && email.isNotEmpty() && comentarios.isNotEmpty()){
                 //Solicitar al ViewModel que envíe la información a la BD de Firestone
-                viewModel.almacenarRegistroCorreo(email,nombre,comentarios).observe(this, Observer {
-                    if(it) {
+                viewModel.almacenarRegistroCorreo(email, nombre, comentarios).observe(this, Observer {
+                    if (it) {
                         Toast.makeText(this, "Correo enviado exitosamente", Toast.LENGTH_SHORT).show()
                         hideProgress()
                         sm_nombre.setText("")
                         sm_email.setText("")
                         sm_comentarios.setText("")
-                    }else{
+                    } else {
                         Toast.makeText(this, "Ocurrió un problema al enviar correo", Toast.LENGTH_SHORT).show()
                         hideProgress()
                     }

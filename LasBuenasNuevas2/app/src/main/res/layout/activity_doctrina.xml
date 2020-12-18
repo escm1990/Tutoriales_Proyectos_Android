@@ -24,13 +24,13 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="567dp"
+            android:layout_height="530dp"
             android:layout_below="@id/toolbarDoctrina"
             android:layout_marginTop="1dp"
             android:gravity="center"
             android:orientation="vertical"
             app:layout_constraintTop_toBottomOf="@id/toolbarDoctrina"
-            android:paddingBottom="60dp">
+            android:layout_marginBottom="60dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -51,7 +51,7 @@
 
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="445dp"
+                android:layout_height="450dp"
                 android:layout_marginTop="5dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
@@ -71,7 +71,7 @@
                         android:onClick="seleccion"
                         android:background="@drawable/botoncorreo"
                         android:textColor="#ffffff"
-                        android:textSize="12dp"/>
+                        android:textSize="10sp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina2"
@@ -82,8 +82,8 @@
                         android:onClick="seleccion"
                         android:background="@drawable/botoncorreo"
                         android:textColor="#ffffff"
-                        android:layout_marginTop="10dp"
-                        android:textSize="12dp"
+                        android:layout_marginTop="4dp"
+                        android:textSize="10sp"
                         />
 
                     <Button
@@ -95,8 +95,8 @@
                         android:onClick="seleccion"
                         android:background="@drawable/botoncorreo"
                         android:textColor="#ffffff"
-                        android:layout_marginTop="10dp"
-                        android:textSize="12dp"/>
+                        android:layout_marginTop="4dp"
+                        android:textSize="10sp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina4"
@@ -107,8 +107,8 @@
                         android:onClick="seleccion"
                         android:background="@drawable/botoncorreo"
                         android:textColor="#ffffff"
-                        android:layout_marginTop="10dp"
-                        android:textSize="12dp"/>
+                        android:layout_marginTop="4dp"
+                        android:textSize="10sp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina5"
@@ -119,8 +119,8 @@
                         android:onClick="seleccion"
                         android:background="@drawable/botoncorreo"
                         android:textColor="#ffffff"
-                        android:layout_marginTop="10dp"
-                        android:textSize="12dp"/>
+                        android:layout_marginTop="4dp"
+                        android:textSize="10sp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina6"
@@ -131,8 +131,8 @@
                         android:onClick="seleccion"
                         android:background="@drawable/botoncorreo"
                         android:textColor="#ffffff"
-                        android:layout_marginTop="10dp"
-                        android:textSize="12dp"/>
+                        android:layout_marginTop="4dp"
+                        android:textSize="10sp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina7"
@@ -143,8 +143,8 @@
                         android:onClick="seleccion"
                         android:background="@drawable/botoncorreo"
                         android:textColor="#ffffff"
-                        android:layout_marginTop="10dp"
-                        android:textSize="12dp"/>
+                        android:layout_marginTop="4dp"
+                        android:textSize="10sp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina8"
@@ -155,8 +155,8 @@
                         android:onClick="seleccion"
                         android:background="@drawable/botoncorreo"
                         android:textColor="#ffffff"
-                        android:layout_marginTop="10dp"
-                        android:textSize="12dp"/>
+                        android:layout_marginTop="4dp"
+                        android:textSize="10sp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina9"
@@ -167,8 +167,8 @@
                         android:onClick="seleccion"
                         android:background="@drawable/botoncorreo"
                         android:textColor="#ffffff"
-                        android:layout_marginTop="10dp"
-                        android:textSize="12dp"/>
+                        android:layout_marginTop="4dp"
+                        android:textSize="10sp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina10"
@@ -179,8 +179,8 @@
                         android:onClick="seleccion"
                         android:background="@drawable/botoncorreo"
                         android:textColor="#ffffff"
-                        android:layout_marginTop="10dp"
-                        android:textSize="12dp"/>
+                        android:layout_marginTop="4dp"
+                        android:textSize="10sp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina11"
@@ -191,8 +191,8 @@
                         android:onClick="seleccion"
                         android:background="@drawable/botoncorreo"
                         android:textColor="#ffffff"
-                        android:layout_marginTop="10dp"
-                        android:textSize="12dp"/>
+                        android:layout_marginTop="4dp"
+                        android:textSize="10sp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina12"
@@ -203,8 +203,8 @@
                         android:onClick="seleccion"
                         android:background="@drawable/botoncorreo"
                         android:textColor="#ffffff"
-                        android:layout_marginTop="10dp"
-                        android:textSize="12dp"/>
+                        android:layout_marginTop="4dp"
+                        android:textSize="10sp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina13"
@@ -215,8 +215,8 @@
                         android:onClick="seleccion"
                         android:background="@drawable/botoncorreo"
                         android:textColor="#ffffff"
-                        android:layout_marginTop="10dp"
-                        android:textSize="12dp"/>
+                        android:layout_marginTop="4dp"
+                        android:textSize="10sp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina14"
@@ -227,8 +227,8 @@
                         android:onClick="seleccion"
                         android:background="@drawable/botoncorreo"
                         android:textColor="#ffffff"
-                        android:layout_marginTop="10dp"
-                        android:textSize="12dp"/>
+                        android:layout_marginTop="4dp"
+                        android:textSize="10sp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina15"
@@ -239,8 +239,8 @@
                         android:onClick="seleccion"
                         android:background="@drawable/botoncorreo"
                         android:textColor="#ffffff"
-                        android:layout_marginTop="10dp"
-                        android:textSize="12dp"/>
+                        android:layout_marginTop="4dp"
+                        android:textSize="10sp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina16"
@@ -251,8 +251,8 @@
                         android:onClick="seleccion"
                         android:background="@drawable/botoncorreo"
                         android:textColor="#ffffff"
-                        android:layout_marginTop="10dp"
-                        android:textSize="12dp"/>
+                        android:layout_marginTop="4dp"
+                        android:textSize="10sp"/>
 
                     <Button
                         android:id="@+id/selectDoctrina17"
@@ -263,8 +263,8 @@
                         android:onClick="seleccion"
                         android:background="@drawable/botoncorreo"
                         android:textColor="#ffffff"
-                        android:layout_marginTop="10dp"
-                        android:textSize="12dp"/>
+                        android:layout_marginTop="4dp"
+                        android:textSize="10sp"/>
 
                 </LinearLayout>
 

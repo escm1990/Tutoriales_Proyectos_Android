@@ -24,13 +24,13 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="567dp"
+            android:layout_height="530dp"
             android:layout_below="@id/toolbarConvicciones"
             android:layout_marginTop="1dp"
             android:gravity="center"
             android:orientation="vertical"
             app:layout_constraintTop_toBottomOf="@id/toolbarConvicciones"
-            android:paddingBottom="60dp">
+            android:layout_marginBottom="60dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -43,11 +43,11 @@
 
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="440dp"
+                android:layout_height="470dp"
                 android:layout_marginTop="5dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
-                android:paddingBottom="50dp" >
+                android:paddingBottom="60dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -56,7 +56,7 @@
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="30dp"
                         app:cardCornerRadius="20dp"
                         app:cardPreventCornerOverlap="false">
 
@@ -72,7 +72,7 @@
                             android:layout_height="match_parent"
                             android:text="@string/textoConviccion1"
                             android:id="@+id/textoConviccion1"
-                            android:textSize="15dp"
+                            android:textSize="12sp"
                             android:textStyle="bold"
                             android:gravity="center"
                             android:textColor="#000000"/>
@@ -82,7 +82,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="30dp"
                         app:cardCornerRadius="20dp">
 
                         <ImageView
@@ -98,7 +98,7 @@
                             android:text="@string/textoConviccion2"
                             android:id="@+id/textoConviccion2"
                             android:gravity="center"
-                            android:textSize="15dp"
+                            android:textSize="12sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
@@ -107,7 +107,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="30dp"
                         app:cardCornerRadius="20dp">
 
                         <ImageView
@@ -123,7 +123,7 @@
                             android:text="@string/textoConviccion3"
                             android:id="@+id/textoConviccion3"
                             android:gravity="center"
-                            android:textSize="15dp"
+                            android:textSize="12sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
@@ -132,7 +132,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="30dp"
                         app:cardCornerRadius="20dp">
 
                         <ImageView
@@ -148,7 +148,7 @@
                             android:text="@string/textoConviccion4"
                             android:id="@+id/textoConviccion4"
                             android:gravity="center"
-                            android:textSize="15dp"
+                            android:textSize="12sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
@@ -157,7 +157,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="30dp"
                         app:cardCornerRadius="20dp">
 
                         <ImageView
@@ -173,7 +173,7 @@
                             android:text="@string/textoConviccion5"
                             android:id="@+id/textoConviccion5"
                             android:gravity="center"
-                            android:textSize="15dp"
+                            android:textSize="12sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
@@ -182,7 +182,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="30dp"
                         app:cardCornerRadius="20dp">
 
                         <ImageView
@@ -198,7 +198,7 @@
                             android:text="@string/textoConviccion6"
                             android:id="@+id/textoConviccion6"
                             android:gravity="center"
-                            android:textSize="15dp"
+                            android:textSize="12sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
@@ -207,7 +207,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="30dp"
                         app:cardCornerRadius="20dp">
 
                         <ImageView
@@ -223,7 +223,7 @@
                             android:text="@string/textoConviccion7"
                             android:id="@+id/textoConviccion7"
                             android:gravity="center"
-                            android:textSize="15dp"
+                            android:textSize="12sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
@@ -232,7 +232,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="30dp"
                         app:cardCornerRadius="20dp">
 
                         <ImageView
@@ -248,7 +248,7 @@
                             android:text="@string/textoConviccion8"
                             android:id="@+id/textoConviccion8"
                             android:gravity="center"
-                            android:textSize="15dp"
+                            android:textSize="12sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
@@ -257,7 +257,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="30dp"
                         app:cardCornerRadius="20dp">
 
                         <ImageView
@@ -273,7 +273,7 @@
                             android:text="@string/textoConviccion9"
                             android:id="@+id/textoConviccion9"
                             android:gravity="center"
-                            android:textSize="15dp"
+                            android:textSize="12sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
@@ -282,7 +282,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="30dp"
                         app:cardCornerRadius="20dp">
 
                         <ImageView
@@ -298,7 +298,7 @@
                             android:text="@string/textoConviccion10"
                             android:id="@+id/textoConviccion10"
                             android:gravity="center"
-                            android:textSize="15dp"
+                            android:textSize="12sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
@@ -307,7 +307,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="30dp"
                         app:cardCornerRadius="20dp">
 
                         <ImageView
@@ -323,7 +323,7 @@
                             android:text="@string/textoConviccion11"
                             android:id="@+id/textoConviccion11"
                             android:gravity="center"
-                            android:textSize="15dp"
+                            android:textSize="12sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
@@ -332,7 +332,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="30dp"
                         app:cardCornerRadius="20dp">
 
                         <ImageView
@@ -348,7 +348,7 @@
                             android:text="@string/textoConviccion12"
                             android:id="@+id/textoConviccion12"
                             android:gravity="center"
-                            android:textSize="15dp"
+                            android:textSize="12sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
@@ -357,7 +357,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="30dp"
                         app:cardCornerRadius="20dp">
 
                         <ImageView
@@ -373,7 +373,7 @@
                             android:text="@string/textoConviccion13"
                             android:id="@+id/textoConviccion13"
                             android:gravity="center"
-                            android:textSize="15dp"
+                            android:textSize="12sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
@@ -382,7 +382,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="30dp"
                         app:cardCornerRadius="20dp">
 
                         <ImageView
@@ -398,7 +398,7 @@
                             android:text="@string/textoConviccion14"
                             android:id="@+id/textoConviccion14"
                             android:gravity="center"
-                            android:textSize="15dp"
+                            android:textSize="12sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
