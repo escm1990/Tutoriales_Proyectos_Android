@@ -9,15 +9,17 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AbsListView;
+import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.escm.lbn.blogger.BloggerAPI;
-import com.escm.lbn.helpers.Constants;
 import com.escm.lbn.blogger.Item;
 import com.escm.lbn.adapter.PostAdapter;
 import com.escm.lbn.blogger.PostList;
@@ -47,11 +49,13 @@ public class PrincipalActivity extends AppCompatActivity {
     LinearLayoutManager manager;
     PostAdapter adapter;
     List<Item> items = new ArrayList<>();
-    boolean isScrolling = false;
+    boolean isScrolling = false, isFiltrando = false;
     int currentItems, totalItems, scrollOutItems;
     String token = "";
     SpinKitView progress;
     private AdView mAdView;
+    ImageButton btnFiltroBuscar;
+    EditText txtFiltroBuscar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +80,8 @@ public class PrincipalActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(manager);
         recyclerView.setAdapter(adapter);
         progress = (SpinKitView) findViewById(R.id.spin_kit);
+        btnFiltroBuscar = (ImageButton) findViewById(R.id.btn_FiltroBuscar);
+        txtFiltroBuscar = (EditText) findViewById(R.id.filtroBuscar);
 
         setUpToolbar();
         navigationView = findViewById(R.id.idNavigationView); //menu
@@ -139,25 +145,31 @@ public class PrincipalActivity extends AppCompatActivity {
                 if(isScrolling && (currentItems + scrollOutItems == totalItems))
                 {
                     isScrolling = false;
-                    getData();
+                    obtenerDatosPost();
                 }
             }
         });
 
-        getData();
+        //Carga la lista de post obtenidos
+        obtenerDatosPost();
+
+        //buscar post por filtro de búsqueda
+        btnFiltroBuscar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String filtro = txtFiltroBuscar.getText().toString().trim();
+                if(TextUtils.isEmpty(filtro)){
+                    obtenerDatosPost();
+                } else {
+                    buscarDatosPostFiltrados(filtro);
+                }
+            }
+        });
 
     }
 
-    private void setUpToolbar() {
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
-        toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        actionBarDrawerToggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.app_name,R.string.app_name);
-        drawerLayout.addDrawerListener(actionBarDrawerToggle);
-        actionBarDrawerToggle.syncState();
-    }
-
-    private void getData(){
+    //Carga la información de todos los post disponible en el blog
+    private void obtenerDatosPost(){
         String url = BloggerAPI.url +"?key=" + BloggerAPI.key;
         if(token != ""){
             url = url + "&pageToken="+token;
@@ -187,5 +199,49 @@ public class PrincipalActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    //Lista todos los post que coincidan con el criterio de búsqueda.
+    private void buscarDatosPostFiltrados(String filtro) {
+        isFiltrando = true;
+        String url = BloggerAPI.urlFiltro +filtro+"&key=" + BloggerAPI.key;
+        if(token != ""){
+            url = url + "&pageToken="+token;
+        }
+        if(token == null){
+            return;
+        }
+        Log.d("MAIN_TAG", "buscarDatosPostFiltrados: "+url);
+        progress.setVisibility(View.VISIBLE);
+        Call<PostList> postList = BloggerAPI.getService().getPostLIst(url);
+        postList.enqueue(new Callback<PostList>() {
+            @Override
+            public void onResponse(Call<PostList> call, Response<PostList> response) {
+                PostList list = response.body();
+                token = list.getNextPageToken();
+                items.addAll(list.getItems());
+                adapter.notifyDataSetChanged();
+                recyclerView.setAdapter(new PostAdapter(PrincipalActivity.this,list.getItems()));
+                //Toast.makeText(PrincipalActivity.this, "Exito", Toast.LENGTH_SHORT).show();
+                progress.setVisibility(View.GONE);
+            }
+
+            @Override
+            public void onFailure(Call<PostList> call, Throwable t) {
+                //Toast.makeText(PrincipalActivity.this, "Error al cargar lista de post", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(PrincipalActivity.this,NoRedActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+    }
+
+    private void setUpToolbar() {
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        actionBarDrawerToggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.app_name,R.string.app_name);
+        drawerLayout.addDrawerListener(actionBarDrawerToggle);
+        actionBarDrawerToggle.syncState();
     }
 }

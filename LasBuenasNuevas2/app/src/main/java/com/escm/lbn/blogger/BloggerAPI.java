@@ -11,6 +11,7 @@ public class BloggerAPI {
 
     public static final String key = "AIzaSyDYQn7qe0Kf4_pwbCI44XJLGmH5aAGJzyM";
     public static final String url = "https://www.googleapis.com/blogger/v3/blogs/6735840350459906273/posts/";
+    public static final String urlFiltro = "https://www.googleapis.com/blogger/v3/blogs/6735840350459906273/posts/search?q=";
 
     public static PostService postService =  null;
 
