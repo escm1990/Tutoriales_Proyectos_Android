@@ -1,66 +1,89 @@
 package com.escm.lbn.fragments;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.escm.lbn.R;
+import com.escm.lbn.adapter.YoutubeAdapter;
+import com.escm.lbn.helpers.Constants;
+import com.escm.lbn.helpers.YoutubeAPI;
+import com.escm.lbn.youtube.ModeloYouTube;
+import com.escm.lbn.youtube.VideoYT;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link YoutubeFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
 public class YoutubeFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    private YoutubeAdapter adapter;
+    private LinearLayoutManager manager;
+    public List<VideoYT> videoList = new ArrayList<>();
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
     public YoutubeFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment YoutubeFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static YoutubeFragment newInstance(String param1, String param2) {
-        YoutubeFragment fragment = new YoutubeFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_youtube, container, false);
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_youtube, container, false);
+        RecyclerView rv = view.findViewById(R.id.recyclerYoutube);
+        adapter = new YoutubeAdapter(getContext(),videoList);
+        manager = new LinearLayoutManager(getContext());
+        rv.setAdapter(adapter);
+        rv.setLayoutManager(manager);
+
+        if(videoList.size() == 0){
+            getJson();
+        }
+
+        return view;
+    }
+
+    private void getJson() {
+        String url = Constants.BASE_URL_YOUTUBE
+                + Constants.SEARCH_YOUTUBE
+                + Constants.API_KEY_YOUTUBE
+                + Constants.ID_CHANNEL_YOUTUBE
+                + Constants.MAX_RESULTS_YOUTUBE
+                + Constants.ORDER_YOUTUBE
+                + Constants.PART_YOUTUBE;
+        Log.v("TAG","URL: "+url);
+        Call<ModeloYouTube> data = YoutubeAPI.getYoutubeVideo().getYT(url);
+        data.enqueue(new Callback<ModeloYouTube>() {
+            @Override
+            public void onResponse(Call<ModeloYouTube> call, Response<ModeloYouTube> response) {
+                Log.v("TAG","response.body() --> "+response.body());
+                if (response.errorBody() != null){
+                    Log.w("TAG","Error Modelo Youtube: "+response.errorBody());
+                } else {
+                    ModeloYouTube mY = response.body();
+                    videoList.addAll(mY.getItems());
+                    adapter.notifyDataSetChanged();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ModeloYouTube> call, Throwable t) {
+                Log.e("TAG","onFailure Modelo Youtube: ",t);
+            }
+        });
     }
 }

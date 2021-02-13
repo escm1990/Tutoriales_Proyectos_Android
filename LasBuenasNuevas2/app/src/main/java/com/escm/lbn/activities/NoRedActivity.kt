@@ -64,6 +64,11 @@ class NoRedActivity : AppCompatActivity() {
                     startActivity(intent2)
                     finish()
                 }
+                R.id.nav_youtube -> {
+                    val intent8 = Intent(this, YoutubeActivity::class.java);
+                    startActivity(intent8);
+                    finish();
+                }
             }
             false
         })

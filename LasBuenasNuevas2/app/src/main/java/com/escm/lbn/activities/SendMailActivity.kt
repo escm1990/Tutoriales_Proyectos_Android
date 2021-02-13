@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import com.escm.lbn.R
 import com.escm.lbn.mailer.MainViewInterface
 import com.escm.lbn.mailer.MainViewModel
@@ -78,6 +78,11 @@ class SendMailActivity : AppCompatActivity(), MainViewInterface {
                     startActivity(intent2)
                     finish()
                 }
+                R.id.nav_youtube -> {
+                    val intent8 = Intent(this, YoutubeActivity::class.java);
+                    startActivity(intent8);
+                    finish();
+                }
             }
             false
         })
@@ -95,7 +100,7 @@ class SendMailActivity : AppCompatActivity(), MainViewInterface {
     }
 
     //lazy genera una instancia hasta el momento de USO, no al inicio de la activity
-    private val viewModel by lazy{ ViewModelProviders.of(this).get(MainViewModel::class.java) }
+    private val viewModel by lazy{ ViewModelProvider(this).get(MainViewModel::class.java) }
 
     fun obtenerDatosCorreo(){
         btnEnviarCorreo.setOnClickListener {

@@ -1,13 +1,5 @@
 package com.escm.lbn.activities;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -19,11 +11,19 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.escm.lbn.R;
+import com.escm.lbn.adapter.PostAdapter;
 import com.escm.lbn.blogger.BloggerAPI;
 import com.escm.lbn.blogger.Item;
-import com.escm.lbn.adapter.PostAdapter;
 import com.escm.lbn.blogger.PostList;
-import com.escm.lbn.R;
 import com.github.ybq.android.spinkit.SpinKitView;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -117,6 +117,11 @@ public class PrincipalActivity extends AppCompatActivity {
                     case R.id.nav_about:
                         Intent intent2 = new Intent(PrincipalActivity.this,AboutActivity.class);
                         startActivity(intent2);
+                        finish();
+                        break;
+                    case R.id.nav_youtube:
+                        Intent intent8 = new Intent(PrincipalActivity.this,YoutubeActivity.class);
+                        startActivity(intent8);
                         finish();
                         break;
                 }

@@ -1,20 +1,18 @@
 package com.escm.lbn.activities;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
-
-import com.escm.lbn.helpers.Constants;
 import com.escm.lbn.R;
-import com.escm.lbn.popus.*;
+import com.escm.lbn.popus.DoctrinaPopupActivity;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
@@ -85,6 +83,11 @@ public class DoctrinaActivity extends AppCompatActivity {
                     case R.id.nav_about:
                         Intent intent2 = new Intent(DoctrinaActivity.this,AboutActivity.class);
                         startActivity(intent2);
+                        finish();
+                        break;
+                    case R.id.nav_youtube:
+                        Intent intent8 = new Intent(DoctrinaActivity.this,YoutubeActivity.class);
+                        startActivity(intent8);
                         finish();
                         break;
                 }

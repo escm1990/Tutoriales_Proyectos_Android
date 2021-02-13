@@ -13,7 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activities.NoRedActivity"
+        <activity android:name=".activities.YoutubeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NoRedActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".popus.DoctrinaPopupActivity"

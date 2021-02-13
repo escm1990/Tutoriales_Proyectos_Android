@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-public class ModeloYT {
+public class ModeloYouTube {
     @SerializedName("nextPageToken")
     @Expose
     private String nextPageToken;
@@ -14,10 +14,10 @@ public class ModeloYT {
     @Expose
     private List<VideoYT> items;
 
-    public ModeloYT() {
+    public ModeloYouTube() {
     }
 
-    public ModeloYT(String nextPageToken, List<VideoYT> items) {
+    public ModeloYouTube(String nextPageToken, List<VideoYT> items) {
         this.nextPageToken = nextPageToken;
         this.items = items;
     }
