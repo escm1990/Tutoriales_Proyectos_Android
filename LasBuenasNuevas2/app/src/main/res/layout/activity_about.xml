@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:id="@+id/drawerLayoutAbout"
-    android:background="@drawable/wp_conv3">
+    android:id="@+id/drawerLayoutAbout">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
         tools:context=".activities.AboutActivity">
 
         <androidx.appcompat.widget.Toolbar
@@ -25,149 +25,205 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="445dp"
-            android:layout_alignParentTop="true"
+            android:layout_height="match_parent"
+            android:id="@+id/contenedorAcercaDe"
+            android:layout_below="@+id/toolbarAbout"
+            android:layout_above="@+id/adViewBannerAcercaDe"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="100dp"
             android:gravity="center_horizontal"
-            android:orientation="vertical"
-            android:paddingBottom="60dp">
+            android:orientation="vertical">
 
-            <TableLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-                <TableRow
-                    android:id="@+id/tablaBotonera"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@drawable/acercadebanner"/>
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+            </LinearLayout>
 
-                        <Button
-                            android:id="@+id/btn_facebook"
-                            android:layout_width="110dp"
-                            android:layout_height="110dp"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginRight="5dp"
-                            android:background="@drawable/fb" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginRight="5dp"
-                            android:text="@string/facebook"
-                            android:textColor="#000000"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <Button
-                            android:id="@+id/btn_twitter"
-                            android:layout_width="110dp"
-                            android:layout_height="110dp"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginRight="5dp"
-                            android:background="@drawable/tw" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginRight="5dp"
-                            android:text="@string/twitter"
-                            android:textColor="#000000"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <Button
-                            android:id="@+id/btn_blogger"
-                            android:layout_width="110dp"
-                            android:layout_height="110dp"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginRight="5dp"
-                            android:background="@drawable/bl" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginRight="5dp"
-                            android:text="@string/blogger"
-                            android:textColor="#000000"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <Button
-                            android:id="@+id/btn_linkedin"
-                            android:layout_width="110dp"
-                            android:layout_height="110dp"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginRight="5dp"
-                            android:background="@drawable/in" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginRight="20dp"
-                            android:text="@string/linkedinDesa"
-                            android:textColor="#000000"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-                </TableRow>
-
-            </TableLayout>
-
-            <TextView
-                android:id="@+id/derechos"
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tablaBotonera"
-                android:layout_marginTop="40dp"
-                android:gravity="center"
-                android:text="@string/derechosReservados"
-                android:textColor="#000000"
-                android:textSize="18dp"
-                android:textStyle="bold"/>
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/acercaDeDescripcion"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"/>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardPreventCornerOverlap="false">
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/fb"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/btn_facebook"/>
+
+                <TextView
+                    android:id="@+id/acerca01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="40dp"
+                    android:text="@string/facebook"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardPreventCornerOverlap="false">
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/tw"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/btn_twitter"/>
+
+                <TextView
+                    android:id="@+id/acerca02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="40dp"
+                    android:text="@string/twitter"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardPreventCornerOverlap="false">
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bl"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/btn_blogger"/>
+
+                <TextView
+                    android:id="@+id/acerca03"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="40dp"
+                    android:text="@string/blogger"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardPreventCornerOverlap="false">
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/youtube"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/btn_youtube"/>
+
+                <TextView
+                    android:id="@+id/acerca04"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="40dp"
+                    android:text="@string/youtubeURL"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardPreventCornerOverlap="false">
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/in"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/btn_linkedin"/>
+
+                <TextView
+                    android:id="@+id/acerca05"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="40dp"
+                    android:text="@string/linkedinDesa"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/derechosReservados"
+                    android:gravity="center"
+                    android:textStyle="bold|italic"
+
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"/>
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -179,8 +235,9 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
             ads:adSize="BANNER"
-            ads:adUnitId="@string/caBannerAcercaDe">
+            ads:adUnitId="@string/caBannerPruebasDesa">
         </com.google.android.gms.ads.AdView>
+
     </RelativeLayout>
 
     <com.google.android.material.navigation.NavigationView

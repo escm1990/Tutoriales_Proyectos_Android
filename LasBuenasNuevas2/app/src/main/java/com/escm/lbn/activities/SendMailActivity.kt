@@ -17,7 +17,6 @@ import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
 import com.google.android.material.navigation.NavigationView
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_send_mail.*
 
 class SendMailActivity : AppCompatActivity(), MainViewInterface {
@@ -93,7 +92,10 @@ class SendMailActivity : AppCompatActivity(), MainViewInterface {
     private fun setUpToolbar() {
         drawerLayout = findViewById<View>(R.id.drawerLayoutSendMail) as DrawerLayout
         toolbar = findViewById(R.id.toolbarSendMail)
-        setSupportActionBar(toolbar)
+        toolbar.run {
+            setTitle(R.string.contacto2)
+            setSupportActionBar(this)
+        }
         actionBarDrawerToggle = ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.app_name, R.string.app_name)
         drawerLayout!!.addDrawerListener(actionBarDrawerToggle!!)
         actionBarDrawerToggle!!.syncState()

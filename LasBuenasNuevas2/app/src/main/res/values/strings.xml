@@ -100,26 +100,28 @@
     <string name="nosenal">Parece que no hay acceso a internet. Comprueba tu conexión y vuelve a intentarlo.</string>
     <string name="volerintentar">Volver a Intentarlo</string>
     <!-- Convicciones -->
-    <string name="textoConviccion1">Nuestra visión: El mundo para Cristo.</string>
-    <string name="textoConviccion2">Nuestra pasión: La Salvación de las almas</string>
-    <string name="textoConviccion3">Nuestra preocupación: La bendición de Dios.</string>
-    <string name="textoConviccion4">Nuestra fuerza: La Unción del Espíritu Santo.</string>
-    <string name="textoConviccion5">Nuestros intereses: Los del Reino de los Cielos.</string>
-    <string name="textoConviccion6">Nuestra arma: La Palabra de Dios.</string>
-    <string name="textoConviccion7">Nuestra doctrina: Fundamentalmente Bíblicas.</string>
-    <string name="textoConviccion8">Nuestras normas: Las más altas.</string>
-    <string name="textoConviccion9">Nuestras fronteras: El mundo.</string>
-    <string name="textoConviccion10">Nuestra decisión: Hasta la muerte.</string>
-    <string name="textoConviccion11">Nuestro anhelo: El Rapto de la Iglesia.</string>
-    <string name="textoConviccion12">Nuestra recompensa: Coronas en el Cielo.</string>
-    <string name="textoConviccion13">Nuestra gran fiesta: Las Bodas del Cordero.</string>
-    <string name="textoConviccion14">Nuestro hogar: La Nueva Jerusalén, en el Cielo.</string>
+    <string name="textoConviccion1">Nuestra visión:\nEl mundo para Cristo.</string>
+    <string name="textoConviccion2">Nuestra pasión:\nLa Salvación de las almas</string>
+    <string name="textoConviccion3">Nuestra preocupación:\nLa bendición de Dios.</string>
+    <string name="textoConviccion4">Nuestra fuerza:\nLa Unción del Espíritu Santo.</string>
+    <string name="textoConviccion5">Nuestros intereses:\nLos del Reino de los Cielos.</string>
+    <string name="textoConviccion6">Nuestra arma:\nLa Palabra de Dios.</string>
+    <string name="textoConviccion7">Nuestra doctrina:\nFundamentalmente Bíblicas.</string>
+    <string name="textoConviccion8">Nuestras normas:\nLas más altas.</string>
+    <string name="textoConviccion9">Nuestras fronteras:\nEl mundo.</string>
+    <string name="textoConviccion10">Nuestra decisión:\nHasta la muerte.</string>
+    <string name="textoConviccion11">Nuestro anhelo:\nEl Rapto de la Iglesia.</string>
+    <string name="textoConviccion12">Nuestra recompensa:\nCoronas en el Cielo.</string>
+    <string name="textoConviccion13">Nuestra gran fiesta:\nLas Bodas del Cordero.</string>
+    <string name="textoConviccion14">Nuestro hogar:\nLa Nueva Jerusalén, en el Cielo.</string>
     <!--Correo-->
     <string name="correo">¿Necesitas consejería u oración? Comunícate con nosotros. Estaremos orando por ti.</string>
     <!--Acerca de-->
+    <string name="acercaDeDescripcion">El Amor más grande es el demostrado en una cruz hace más de 2000 años.\n\nSomos una app desde la cual deseamos llevar el mensaje de Dios al mundo.</string>
     <string name="facebook">Búscanos en Facebook</string>
     <string name="twitter">Síguenos en Twitter</string>
-    <string name="linkedinDesa">Desarrollador</string>
-    <string name="blogger">Versión Web</string>
-    <string name="derechosReservados">Buenas Nuevas - 2020</string>
+    <string name="linkedinDesa">Sobre el desarrollador</string>
+    <string name="blogger">Descubre la versión web</string>
+    <string name="youtubeURL">Nuestro canal de Youtube</string>
+    <string name="derechosReservados">Buenas Nuevas - 2021</string>
 </resources>

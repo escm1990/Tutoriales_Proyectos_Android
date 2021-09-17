@@ -24,30 +24,19 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="530dp"
+            android:layout_height="wrap_content"
             android:layout_below="@id/toolbarConvicciones"
-            android:layout_marginTop="1dp"
+            android:layout_above="@id/adViewBannerConvicciones"
             android:gravity="center"
-            android:orientation="vertical"
-            app:layout_constraintTop_toBottomOf="@id/toolbarConvicciones"
-            android:layout_marginBottom="60dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nuestras Convicciones"
-                android:textStyle="bold"
-                android:layout_marginTop="60dp"
-                android:textSize="25dp"
-                android:textColor="#000000"/>
+            android:orientation="vertical">
 
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="470dp"
-                android:layout_marginTop="5dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
                 android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                android:paddingBottom="60dp">
+                android:paddingRight="10dp"
+                android:id="@+id/scrollViewBotonera">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -56,349 +45,382 @@
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        app:cardCornerRadius="20dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardCornerRadius="5dp"
                         app:cardPreventCornerOverlap="false">
 
                         <ImageView
-                            android:layout_width="match_parent"
+                            android:layout_width="50dp"
                             android:layout_height="match_parent"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/wp_conv2"/>
+                            android:src="@drawable/con01" />
 
                         <TextView
+                            android:id="@+id/textoConviccion1"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="@string/textoConviccion1"
-                            android:id="@+id/textoConviccion1"
-                            android:textSize="12sp"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textColor="#000000"/>
+                            android:layout_marginLeft="50dp"
+                            android:text="@string/textoConviccion1"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
 
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        app:cardCornerRadius="20dp">
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardPreventCornerOverlap="false">
 
                         <ImageView
-                            android:layout_width="match_parent"
+                            android:layout_width="50dp"
                             android:layout_height="match_parent"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/wp_conv2"/>
+                            android:src="@drawable/con02"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="50dp"
                             android:text="@string/textoConviccion2"
                             android:id="@+id/textoConviccion2"
                             android:gravity="center"
-                            android:textSize="12sp"
+                            android:textSize="14sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        app:cardCornerRadius="20dp">
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardPreventCornerOverlap="false">
 
                         <ImageView
-                            android:layout_width="match_parent"
+                            android:layout_width="50dp"
                             android:layout_height="match_parent"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/wp_conv2"/>
+                            android:src="@drawable/con03" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="50dp"
                             android:text="@string/textoConviccion3"
                             android:id="@+id/textoConviccion3"
                             android:gravity="center"
-                            android:textSize="12sp"
+                            android:textSize="14sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        app:cardCornerRadius="20dp">
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardPreventCornerOverlap="false">
 
                         <ImageView
-                            android:layout_width="match_parent"
+                            android:layout_width="50dp"
                             android:layout_height="match_parent"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/wp_conv2"/>
+                            android:src="@drawable/con04" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="50dp"
                             android:text="@string/textoConviccion4"
                             android:id="@+id/textoConviccion4"
                             android:gravity="center"
-                            android:textSize="12sp"
+                            android:textSize="14sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        app:cardCornerRadius="20dp">
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardPreventCornerOverlap="false">
 
                         <ImageView
-                            android:layout_width="match_parent"
+                            android:layout_width="50dp"
                             android:layout_height="match_parent"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/wp_conv2"/>
+                            android:src="@drawable/con05" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="50dp"
                             android:text="@string/textoConviccion5"
                             android:id="@+id/textoConviccion5"
                             android:gravity="center"
-                            android:textSize="12sp"
+                            android:textSize="14sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        app:cardCornerRadius="20dp">
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardPreventCornerOverlap="false">
 
                         <ImageView
-                            android:layout_width="match_parent"
+                            android:layout_width="50dp"
                             android:layout_height="match_parent"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/wp_conv2"/>
+                            android:src="@drawable/con06" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="50dp"
                             android:text="@string/textoConviccion6"
                             android:id="@+id/textoConviccion6"
                             android:gravity="center"
-                            android:textSize="12sp"
+                            android:textSize="14sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        app:cardCornerRadius="20dp">
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardPreventCornerOverlap="false">
 
                         <ImageView
-                            android:layout_width="match_parent"
+                            android:layout_width="50dp"
                             android:layout_height="match_parent"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/wp_conv2"/>
+                            android:src="@drawable/con07" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="50dp"
                             android:text="@string/textoConviccion7"
                             android:id="@+id/textoConviccion7"
                             android:gravity="center"
-                            android:textSize="12sp"
+                            android:textSize="14sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        app:cardCornerRadius="20dp">
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardPreventCornerOverlap="false">
 
                         <ImageView
-                            android:layout_width="match_parent"
+                            android:layout_width="50dp"
                             android:layout_height="match_parent"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/wp_conv2"/>
+                            android:src="@drawable/con08" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="50dp"
                             android:text="@string/textoConviccion8"
                             android:id="@+id/textoConviccion8"
                             android:gravity="center"
-                            android:textSize="12sp"
+                            android:textSize="14sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        app:cardCornerRadius="20dp">
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardPreventCornerOverlap="false">
 
                         <ImageView
-                            android:layout_width="match_parent"
+                            android:layout_width="50dp"
                             android:layout_height="match_parent"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/wp_conv2"/>
+                            android:padding="7dp"
+                            android:src="@drawable/con09" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="50dp"
                             android:text="@string/textoConviccion9"
                             android:id="@+id/textoConviccion9"
                             android:gravity="center"
-                            android:textSize="12sp"
+                            android:textSize="14sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        app:cardCornerRadius="20dp">
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardPreventCornerOverlap="false">
 
                         <ImageView
-                            android:layout_width="match_parent"
+                            android:layout_width="50dp"
                             android:layout_height="match_parent"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/wp_conv2"/>
+                            android:src="@drawable/con10" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="50dp"
                             android:text="@string/textoConviccion10"
                             android:id="@+id/textoConviccion10"
                             android:gravity="center"
-                            android:textSize="12sp"
+                            android:textSize="14sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        app:cardCornerRadius="20dp">
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardPreventCornerOverlap="false">
 
                         <ImageView
-                            android:layout_width="match_parent"
+                            android:layout_width="50dp"
                             android:layout_height="match_parent"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/wp_conv2"/>
+                            android:padding="5dp"
+                            android:src="@drawable/con11" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="50dp"
                             android:text="@string/textoConviccion11"
                             android:id="@+id/textoConviccion11"
                             android:gravity="center"
-                            android:textSize="12sp"
+                            android:textSize="14sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        app:cardCornerRadius="20dp">
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardPreventCornerOverlap="false">
 
                         <ImageView
-                            android:layout_width="match_parent"
+                            android:layout_width="50dp"
                             android:layout_height="match_parent"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/wp_conv2"/>
+                            android:padding="5dp"
+                            android:src="@drawable/con12" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="50dp"
                             android:text="@string/textoConviccion12"
                             android:id="@+id/textoConviccion12"
                             android:gravity="center"
-                            android:textSize="12sp"
+                            android:textSize="14sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        app:cardCornerRadius="20dp">
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardPreventCornerOverlap="false">
 
                         <ImageView
-                            android:layout_width="match_parent"
+                            android:layout_width="50dp"
                             android:layout_height="match_parent"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/wp_conv2"/>
+                            android:padding="5dp"
+                            android:src="@drawable/con13" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="50dp"
                             android:text="@string/textoConviccion13"
                             android:id="@+id/textoConviccion13"
                             android:gravity="center"
-                            android:textSize="12sp"
+                            android:textSize="14sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        app:cardCornerRadius="20dp">
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardPreventCornerOverlap="false">
 
                         <ImageView
-                            android:layout_width="match_parent"
+                            android:layout_width="50dp"
                             android:layout_height="match_parent"
                             android:adjustViewBounds="true"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/wp_conv2"/>
+                            android:padding="5dp"
+                            android:src="@drawable/con14" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="50dp"
                             android:text="@string/textoConviccion14"
                             android:id="@+id/textoConviccion14"
                             android:gravity="center"
-                            android:textSize="12sp"
+                            android:textSize="14sp"
                             android:textStyle="bold"
                             android:textColor="#000000"/>
 
@@ -417,7 +439,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
             ads:adSize="BANNER"
-            ads:adUnitId="@string/caBannerConvicciones">
+            ads:adUnitId="@string/caBannerPruebasDesa">
         </com.google.android.gms.ads.AdView>
 
     </RelativeLayout>

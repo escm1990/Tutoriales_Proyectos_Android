@@ -114,6 +114,7 @@ public class YoutubeActivity extends AppCompatActivity {
     private void setUpToolbar() {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayoutYoutube);
         toolbar = findViewById(R.id.toolbarYoutube);
+        toolbar.setTitle(R.string.youtube);
         setSupportActionBar(toolbar);
         actionBarDrawerToggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.app_name,R.string.app_name);
         drawerLayout.addDrawerListener(actionBarDrawerToggle);

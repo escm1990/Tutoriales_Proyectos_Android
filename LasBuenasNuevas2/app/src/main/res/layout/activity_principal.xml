@@ -24,7 +24,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_margin="5dp"
-            android:gravity="center">
+            android:gravity="center"
+            android:id="@+id/barraBusqueda">
 
             <EditText
                 android:layout_width="match_parent"
@@ -48,7 +49,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:id="@+id/postList"/>
+            android:id="@+id/postList"
+            android:layout_below="@+id/barraBusqueda"
+            android:layout_above="@id/adViewBannerPrincipal"
+            />
 
         <com.github.ybq.android.spinkit.SpinKitView
             xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -68,7 +72,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
             ads:adSize="BANNER"
-            ads:adUnitId="@string/caBannerPrincipal">
+            ads:adUnitId="@string/caBannerPruebasDesa">
         </com.google.android.gms.ads.AdView>
 
     </LinearLayout>

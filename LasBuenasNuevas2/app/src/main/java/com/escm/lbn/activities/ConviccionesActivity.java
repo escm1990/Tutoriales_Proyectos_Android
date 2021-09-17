@@ -96,6 +96,7 @@ public class ConviccionesActivity extends AppCompatActivity {
     private void setUpToolbar() {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayoutConvicciones);
         toolbar = findViewById(R.id.toolbarConvicciones);
+        toolbar.setTitle(R.string.convicciones);
         setSupportActionBar(toolbar);
         actionBarDrawerToggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.app_name,R.string.app_name);
         drawerLayout.addDrawerListener(actionBarDrawerToggle);

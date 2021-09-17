@@ -154,6 +154,7 @@ public class FavoritosActivity extends AppCompatActivity {
     private void setUpToolbar() {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayoutFavorito);
         toolbar = findViewById(R.id.toolbarFavorito);
+        toolbar.setTitle(R.string.favoritos);
         setSupportActionBar(toolbar);
         actionBarDrawerToggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.app_name,R.string.app_name);
         drawerLayout.addDrawerListener(actionBarDrawerToggle);

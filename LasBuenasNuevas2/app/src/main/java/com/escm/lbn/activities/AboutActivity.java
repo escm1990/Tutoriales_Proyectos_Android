@@ -24,7 +24,7 @@ import com.google.android.material.navigation.NavigationView;
 
 public class AboutActivity extends AppCompatActivity {
 
-    Button botonLinkedin, botonFacebook, botonTwitter, botonBlogger;
+    Button botonLinkedin, botonFacebook, botonTwitter, botonBlogger, botonYoutube;
 
     ActionBarDrawerToggle actionBarDrawerToggle;
     DrawerLayout drawerLayout;
@@ -110,6 +110,18 @@ public class AboutActivity extends AppCompatActivity {
             }
         });
 
+        botonYoutube = (Button) findViewById(R.id.btn_youtube);
+
+        botonYoutube.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse(Constants.url_youtube);
+                Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(intent);
+                finish();
+            }
+        });
+
         botonFacebook = (Button) findViewById(R.id.btn_facebook);
 
         botonFacebook.setOnClickListener(new View.OnClickListener() {
@@ -160,6 +172,7 @@ public class AboutActivity extends AppCompatActivity {
     private void setUpToolbar() {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayoutAbout);
         toolbar = findViewById(R.id.toolbarAbout);
+        toolbar.setTitle("Acerca de");
         setSupportActionBar(toolbar);
         actionBarDrawerToggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.app_name,R.string.app_name);
         drawerLayout.addDrawerListener(actionBarDrawerToggle);

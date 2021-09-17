@@ -9,7 +9,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         tools:context=".activities.DoctrinaActivity">
 
         <androidx.appcompat.widget.Toolbar
@@ -23,256 +24,23 @@
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="530dp"
-            android:layout_below="@id/toolbarDoctrina"
-            android:layout_marginTop="1dp"
-            android:gravity="center"
-            android:orientation="vertical"
-            app:layout_constraintTop_toBottomOf="@id/toolbarDoctrina"
-            android:layout_marginBottom="60dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="¿En qué creemos?"
-                android:textStyle="bold"
-                android:layout_marginTop="60dp"
-                android:textSize="25dp"
-                android:textColor="#000000"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Presiona cada elemento para ver la referencia bíblica."
-                android:textStyle="bold"
-                android:textSize="10dp"
-                android:textColor="#000000"/>
-
-            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="450dp"
-                android:layout_marginTop="5dp"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                android:paddingBottom="50dp">
+                android:layout_height="match_parent"
+                android:layout_below="@+id/toolbarDoctrina"
+                android:layout_above="@id/adViewBannerDoctrina"
+                android:id="@+id/lyDoctrina"
+                android:orientation="vertical">
 
-                <LinearLayout
+                <ExpandableListView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_height="match_parent"
+                    android:id="@+id/evDoctrina">
+                </ExpandableListView>
 
-                    <Button
-                        android:id="@+id/selectDoctrina1"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:fadingEdge="vertical|none"
-                        android:text="@string/textoDoctrina1"
-                        android:onClick="seleccion"
-                        android:background="@drawable/botoncorreo"
-                        android:textColor="#ffffff"
-                        android:textSize="10sp"/>
-
-                    <Button
-                        android:id="@+id/selectDoctrina2"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:fadingEdge="vertical|none"
-                        android:text="@string/textoDoctrina2"
-                        android:onClick="seleccion"
-                        android:background="@drawable/botoncorreo"
-                        android:textColor="#ffffff"
-                        android:layout_marginTop="4dp"
-                        android:textSize="10sp"
-                        />
-
-                    <Button
-                        android:id="@+id/selectDoctrina3"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:fadingEdge="vertical|none"
-                        android:text="@string/textoDoctrina3"
-                        android:onClick="seleccion"
-                        android:background="@drawable/botoncorreo"
-                        android:textColor="#ffffff"
-                        android:layout_marginTop="4dp"
-                        android:textSize="10sp"/>
-
-                    <Button
-                        android:id="@+id/selectDoctrina4"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:fadingEdge="vertical|none"
-                        android:text="@string/textoDoctrina4"
-                        android:onClick="seleccion"
-                        android:background="@drawable/botoncorreo"
-                        android:textColor="#ffffff"
-                        android:layout_marginTop="4dp"
-                        android:textSize="10sp"/>
-
-                    <Button
-                        android:id="@+id/selectDoctrina5"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:fadingEdge="vertical|none"
-                        android:text="@string/textoDoctrina5"
-                        android:onClick="seleccion"
-                        android:background="@drawable/botoncorreo"
-                        android:textColor="#ffffff"
-                        android:layout_marginTop="4dp"
-                        android:textSize="10sp"/>
-
-                    <Button
-                        android:id="@+id/selectDoctrina6"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:fadingEdge="vertical|none"
-                        android:text="@string/textoDoctrina6"
-                        android:onClick="seleccion"
-                        android:background="@drawable/botoncorreo"
-                        android:textColor="#ffffff"
-                        android:layout_marginTop="4dp"
-                        android:textSize="10sp"/>
-
-                    <Button
-                        android:id="@+id/selectDoctrina7"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:fadingEdge="vertical|none"
-                        android:text="@string/textoDoctrina7"
-                        android:onClick="seleccion"
-                        android:background="@drawable/botoncorreo"
-                        android:textColor="#ffffff"
-                        android:layout_marginTop="4dp"
-                        android:textSize="10sp"/>
-
-                    <Button
-                        android:id="@+id/selectDoctrina8"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:fadingEdge="vertical|none"
-                        android:text="@string/textoDoctrina8"
-                        android:onClick="seleccion"
-                        android:background="@drawable/botoncorreo"
-                        android:textColor="#ffffff"
-                        android:layout_marginTop="4dp"
-                        android:textSize="10sp"/>
-
-                    <Button
-                        android:id="@+id/selectDoctrina9"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:fadingEdge="vertical|none"
-                        android:text="@string/textoDoctrina9"
-                        android:onClick="seleccion"
-                        android:background="@drawable/botoncorreo"
-                        android:textColor="#ffffff"
-                        android:layout_marginTop="4dp"
-                        android:textSize="10sp"/>
-
-                    <Button
-                        android:id="@+id/selectDoctrina10"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:fadingEdge="vertical|none"
-                        android:text="@string/textoDoctrina10"
-                        android:onClick="seleccion"
-                        android:background="@drawable/botoncorreo"
-                        android:textColor="#ffffff"
-                        android:layout_marginTop="4dp"
-                        android:textSize="10sp"/>
-
-                    <Button
-                        android:id="@+id/selectDoctrina11"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:fadingEdge="vertical|none"
-                        android:text="@string/textoDoctrina11"
-                        android:onClick="seleccion"
-                        android:background="@drawable/botoncorreo"
-                        android:textColor="#ffffff"
-                        android:layout_marginTop="4dp"
-                        android:textSize="10sp"/>
-
-                    <Button
-                        android:id="@+id/selectDoctrina12"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:fadingEdge="vertical|none"
-                        android:text="@string/textoDoctrina12"
-                        android:onClick="seleccion"
-                        android:background="@drawable/botoncorreo"
-                        android:textColor="#ffffff"
-                        android:layout_marginTop="4dp"
-                        android:textSize="10sp"/>
-
-                    <Button
-                        android:id="@+id/selectDoctrina13"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:fadingEdge="vertical|none"
-                        android:text="@string/textoDoctrina13"
-                        android:onClick="seleccion"
-                        android:background="@drawable/botoncorreo"
-                        android:textColor="#ffffff"
-                        android:layout_marginTop="4dp"
-                        android:textSize="10sp"/>
-
-                    <Button
-                        android:id="@+id/selectDoctrina14"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:fadingEdge="vertical|none"
-                        android:text="@string/textoDoctrina14"
-                        android:onClick="seleccion"
-                        android:background="@drawable/botoncorreo"
-                        android:textColor="#ffffff"
-                        android:layout_marginTop="4dp"
-                        android:textSize="10sp"/>
-
-                    <Button
-                        android:id="@+id/selectDoctrina15"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:fadingEdge="vertical|none"
-                        android:text="@string/textoDoctrina15"
-                        android:onClick="seleccion"
-                        android:background="@drawable/botoncorreo"
-                        android:textColor="#ffffff"
-                        android:layout_marginTop="4dp"
-                        android:textSize="10sp"/>
-
-                    <Button
-                        android:id="@+id/selectDoctrina16"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:fadingEdge="vertical|none"
-                        android:text="@string/textoDoctrina16"
-                        android:onClick="seleccion"
-                        android:background="@drawable/botoncorreo"
-                        android:textColor="#ffffff"
-                        android:layout_marginTop="4dp"
-                        android:textSize="10sp"/>
-
-                    <Button
-                        android:id="@+id/selectDoctrina17"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:fadingEdge="vertical|none"
-                        android:text="@string/textoDoctrina17"
-                        android:onClick="seleccion"
-                        android:background="@drawable/botoncorreo"
-                        android:textColor="#ffffff"
-                        android:layout_marginTop="4dp"
-                        android:textSize="10sp"/>
-
-                </LinearLayout>
-
-            </ScrollView>
-
-        </LinearLayout>
+            </LinearLayout>
 
         <com.google.android.gms.ads.AdView
+            android:layout_alignParentTop="@+id/lyDoctrina"
             xmlns:ads="http://schemas.android.com/apk/res-auto"
             android:id="@+id/adViewBannerDoctrina"
             android:layout_width="wrap_content"
@@ -280,7 +48,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
             ads:adSize="BANNER"
-            ads:adUnitId="@string/caBannerDoctrina">
+            ads:adUnitId="@string/caBannerPruebasDesa">
         </com.google.android.gms.ads.AdView>
 
     </RelativeLayout>
