@@ -439,7 +439,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
             ads:adSize="BANNER"
-            ads:adUnitId="@string/caBannerPruebasDesa">
+            ads:adUnitId="@string/caBannerConvicciones">
         </com.google.android.gms.ads.AdView>
 
     </RelativeLayout>

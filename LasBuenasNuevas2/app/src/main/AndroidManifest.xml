@@ -40,9 +40,6 @@
             android:name=".activities.PostDetailActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activities.DetalleActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".activities.PrincipalActivity"
             android:screenOrientation="portrait" />
         <activity

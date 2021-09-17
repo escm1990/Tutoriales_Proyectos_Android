@@ -34,19 +34,21 @@ public class YoutubeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     class YoutubeHolder extends RecyclerView.ViewHolder{
 
         ImageView miniatura;
-        TextView titulo, detalle;
+        TextView titulo, detalle, publicado;
 
         public YoutubeHolder(@NonNull View itemView) {
             super(itemView);
             miniatura = itemView.findViewById(R.id.img_miniatura_youtube);
             titulo = itemView.findViewById(R.id.tv_titulo_youtube);
             detalle = itemView.findViewById(R.id.tv_detalle_youtube);
+            publicado = itemView.findViewById(R.id.tv_published_youtube);
         }
 
         public void setData(VideoYT videoYT) {
             String getTitulo = videoYT.getSnippet().getTitle();
-            String getFecha = videoYT.getSnippet().getDescription();
+            String getDetalle = videoYT.getSnippet().getDescription();
             String getMiniatura = videoYT.getSnippet().getThumbnails().getMedium().getUrl();
+            String getPublicado = "Fecha Publicación: "+videoYT.getSnippet().getPublishedAt().substring(0,10);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -59,7 +61,9 @@ public class YoutubeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             });
 
             titulo.setText(getTitulo);
-            detalle.setText(getFecha);
+            detalle.setText(getDetalle);
+            publicado.setText(getPublicado);
+
             Picasso.get().load(getMiniatura).placeholder(R.mipmap.ic_launcher).fit().centerCrop().into(miniatura, new Callback() {
                 @Override
                 public void onSuccess() {
